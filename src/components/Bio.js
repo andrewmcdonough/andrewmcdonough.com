@@ -31,11 +31,13 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
-              {` `}
+              <strong>{author}</strong> is a consultant CTO and software developer, currently based between Berlin and London.
+              <br/>
+              <br/>
               <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+                Follow Andrew on Twitter
+              </a> or <a href={`https://linkedin.com/in/andrewmcdonough`}>
+                Connect on LinkedIn
               </a>
             </p>
           </div>
