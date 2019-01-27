@@ -1,0 +1,76 @@
+==================================================================
+https://keybase.io/andrewmcdonough
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.andrewmcdonough.com
+  * I am andrewmcdonough (https://keybase.io/andrewmcdonough) on keybase.
+  * I have a public key with fingerprint 31E7 E554 B2BE EE38 8DA2  3D68 7BDD 9CCB 6BC2 5CBE
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120d0d7e83455fb2f3c786dc1187d8a8fe7d5a4c787d878babde0d629e23c7a4c640a",
+            "fingerprint": "31e7e554b2beee388da23d687bdd9ccb6bc25cbe",
+            "host": "keybase.io",
+            "key_id": "7bdd9ccb6bc25cbe",
+            "kid": "01013912c4021bf6d342b1b11c48e54a62e2b403ea870ad50e02f87d231ae42ce7740a",
+            "uid": "7f95d049f99d421ea27993bbbd79a119",
+            "username": "andrewmcdonough"
+        },
+        "service": {
+            "hostname": "www.andrewmcdonough.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1486678886,
+    "expire_in": 157680000,
+    "prev": "80e6f2f199873fc190605ad656e055c23d49b98d75050813b5f0865b954dbd26",
+    "seqno": 15,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.62
+Comment: https://keybase.io/crypto
+
+yMN3AnicbZJtUFRVGMeXeGnEABWC1FGHyyDxInPfX2gQaRQxo6FgGExxu+eec3ev
+C3uXu7vASqQ4QzRGgiNfcnAx3BjQADFFrIaAAZMQ0QahYkR0UkyKaQSyjLK7qF+a
+zpczzzm/5//8n+ecviBfQ6BP6Y26QUvvri6fwZ5mpyG3blouxYAKXVhSKWZBixvK
+h8juMFoUiCVhOEHiEIcc4imaYWRAypTE8SyUCILnIC/yMuIgI9L6oR5yPBABRDhk
+SQGROqlfsDQuYgmYrFhNSLNpitWhy1IE4hDD0IAECCGK56FIUpDlOQChIEmABRLJ
+SADpiWbV7s3QzQHRjhIVVT/TA+Oivf/hn/nGCUogSInGSQLILKRoEhCAICSaRwwt
+siQiAY1TSOQ5XIQMjnBS1lsgKUJENCkhjnvi2/mkjiwwEKcFWRAgTRJIJDlBoAAA
+kBNEghC8oB1pVrEA6bRohRoqLpCgalWdJjNWloDpl0WKhLzz9Tb0FCwuLk78D5wo
+qQW6mk1THaqk5uuQ2eGwJXk1HC7bYhICxqdyRqBYoT5YPaEIaXZFtWJJhE5KDsWr
+T9A8y3I8z7MJGCqxKRoyKl6C4Vge15e3DCrSJXkcsTIpE4LAc5QsEQLO4owIWYZF
+OMNI+tPQAhB4yDE4g/MEBRgZ51kGCAwNASRZzNtgoVX1aus+RZOuaVdMVtHh1BBW
+1tuzy8/gE2gI8H/O++MMgUuWPfuHhdPLDPWTpt3tnxzw1Clhn4+uqh1bm3H0pZQf
+Nxm/29taH3TAjK3JqWo4bMm5EHnF7U5Od32Y0t9yKLsir2V67cDzbl+p5asO/+R9
+qzz8yi9M9fuax4Nmz77T4J76fnD7w6735xydZc1a9JkzKWmlx02ehJfL9zcNZ61M
+jKl868i2Bos1oFL7rP1mds+7ewhxewzWGG3b6tfR+sryxpreN3xCavGshY6y1wO6
+6OXV9ZW55tsPIo5OyKFnax9dzkioPP3qoaLQ39WJv/ej2oG+itywzHMhn8INl+7S
+YfGn8h631p6MbbqemRJCHZuMtHYNjQUnuKrUm7E7Z8M9wWnuqchbmuVq1r3z6UOu
+qp2d4fHrfVubAl2hNWan351T4+W5JTzTPbPio2tKjDVwJk6cPUL1GU4WZq/QRiPC
+d+zgdqd3Nz5Ygp0/OFa0PviYXP2lv3EhdURLXzq/5e1fNn/Ndbe9dngy1T/u9PGp
+zvvDNX+c25S3tKbiBQ8d4r7oZO8E+rxXGc6NLPw1ca83Yu7branxe79JbfaxRX3w
+U/ClW2FRM3s25lT//GLzSP+Wza0j43+ufrhhXeOjhq7fMufz2v65fuXaalscP+S8
+/IPaMWrPPxG+bpulsOlipSE5Obkko34uas2Njz3Tv47GjlxNK6+Oae+Nmu5l6osH
+Yu4f7H/8ptJ2Ig0bnr8QvfH2jHr3X/xCypc=
+=49oo
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/andrewmcdonough
+
+==================================================================
+
