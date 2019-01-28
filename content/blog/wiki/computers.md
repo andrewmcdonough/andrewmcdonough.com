@@ -1,211 +1,210 @@
-===== Programming =====
-==== Ruby ====
-  * [[Ruby]]
-  * [[Ruby on Rails]]
-==== Java ====
+## Programming
+### Ruby
+  * [Ruby](/wiki/ruby)
+  * [Ruby on Rails](/wiki/ruby_on_rails)
+### Java
 
-  * [[Java]]
-  * [[Eclipse]]
-  * [[Hibernate]]
-  * [[Struts]]
-  * [[JSP]]
-  * [[Middlegen]]
-  * [[JSTL]]
-  * [[Ant]]
-  * [[Certification]]
-  * [[Lucene]]
-  * [[Groovy]]
-  * [[Taglibs]]
-  * [[Tomcat]]
-  * [[SCJP]]
-  * [[Annotations]]
-  * [[Autoboxing]]
-  * [[Quartz]] - An open source Java scheduling framework
-  * [[Acegi]] - Security for Java using Spring. http://www.acegisecurity.org/
-
-
-==== PHP ====
-  * [[PHP]]
-
-==== Javascript ====
-  * [[Javascript]]
-  * [[Prototype]]
-  * [[script.aculo.us]]
-  * [[JQuery]]
-  * [[mootools]]
-
-==== Python ====
-  * [[Python]]
-  * [[Django]]
-  * [[GAE]]
-==== .NET ====
-  * [[Microsoft Certification]]
-  * [[CLR]]
-  * [[Delegates]]
-==== Smalltalk ====
-  * [[Smalltalk]]
-  * [[Seaside on Smalltalk]]
-
-==== Other Languages ====
-  * [[Haskell]]
-  * [[Erlang]]
-  * [[Tcl]]
-  * [[C]]
-  * [[Python]]
-  * [[VB]]
-  * [[IKVM]]
-  * [[Mono]]
-
-==== General Programming ====
-  * [[Aspect Oriented Programming]]
-  * [[Metaprogramming]]
-  * [[code blocks]]
-  * [[Inversion of Control]]
-  * [[Generics]]
-  * [[Closures]]
-  * [[Design Patterns]]
-  * [[Aspect Oriented Programming]]
-  * [[Inversion of Control]]
-==== Development Environments ====
-  * [[Eclipse]]
-  * [[vi]]
-
-==== Resources ====
-  * [[Service-oriented architecture]]
-  * [[Web Services]]
-  * [[REST]]
-
-===== Operating Systems =====
-==== Linux ====
-  * [[Linux]]
-  * [[Linux Networking]]
-  * [[Linux Useful Commands]]
-  * [[Security]]
-  * [[grep]]
-  * [[awk]]
-  * [[bash]]
-  * [[tar]]
-  * [[iptables]]
-  * [[samba]]
-
-===== Databases =====
-
-==== MySQL ====
-  * [[MySQL]]
-==== Oracle ====
-  * [[Oracle]]
-==== Misc ====
-  * [[Databases]]
-  * [[Postgres]]
-  * [[Database Theory]]
-
-===== Web =====
-==== General ====
-  * [[Web]]
-  * [[HTML]]
-  * [[XML]]
-  * [[CSS]]
-  * [[Web Design]]
-  * [[Graphics]]
-  * [[Ajax]]
-  * [[Streaming Video]]
-
-==== Servers ====
-  * [[Apache]]
-  * [[Tomcat]]
-  * [[Mongrel]]
-  * [[IIS]]
-
-==== Security ====
-  * [[Security]]
-  * [[XSS]]
-  * [[SQL Injection]]
-  * [[Captcha]]
-
-==== Software ====
-  * **[[Excel]]**
-  * [[Software]]
-  * [[Photoshop]]
-  * [[Illustrator]]
-  * [[Windows]]
-  * [[Outlook]]
-  * [[Open Exchange]]
-  * [[Powerpoint]]
-  * [[Utilities]]
-  * [[Software]]
-
-==== Misc ====
-
-  * [[Misc]]
-  * [[Networking]]
-  * [[Open Source]]
-  * [[People]]
-  * [[eXtreme Programming]]
-  * [[Regular Expressions]]
-  * [[Software Engineering]]
-===== Data =====
-==== XML ====
-  * [[Castor]]
-  * [[XPath]]
-  * [[XSLT]]
-==== Microformats ====
-  * [[Microformats]]
-
-==== RDF ====
-  * [[RDF]]
-==== Excel ====
-  * [[Excel]]
-
-===== Sysadmin =====
+  * [Java](/wiki/java)
+  * [Eclipse](/wiki/eclipse)
+  * [Hibernate](/wiki/hibernate)
+  * [Struts](/wiki/struts)
+  * [JSP](/wiki/jsp)
+  * [Middlegen](/wiki/middlegen)
+  * [JSTL](/wiki/jstl)
+  * [Ant](/wiki/ant)
+  * [Certification](/wiki/certification)
+  * [Lucene](/wiki/lucene)
+  * [Groovy](/wiki/groovy)
+  * [Taglibs](/wiki/taglibs)
+  * [Tomcat](/wiki/tomcat)
+  * [SCJP](/wiki/scjp)
+  * [Annotations](/wiki/annotations)
+  * [Autoboxing](/wiki/autoboxing)
+  * [Quartz](/wiki/quartz) - An open source Java scheduling framework
+  * [Acegi](/wiki/acegi) - Security for Java using Spring. http://www.acegisecurity.org/
 
 
-==== Version Control ====
-  * [[git]]
-  * [[CVS]]
-  * [[Subversion]]
-  * [[Cruise Control]]
+### PHP
+  * [PHP](/wiki/php)
+
+### Javascript
+  * [Javascript](/wiki/javascript)
+  * [Prototype](/wiki/prototype)
+  * [script.aculo.us](/wiki/script.aculo.us)
+  * [JQuery](/wiki/jquery)
+  * [mootools](/wiki/mootools)
+
+### Python
+  * [Python](/wiki/python)
+  * [Django](/wiki/django)
+  * [GAE](/wiki/gae)
+### .NET
+  * [Microsoft Certification](/wiki/microsoft_certification)
+  * [CLR](/wiki/clr)
+  * [Delegates](/wiki/delegates)
+### Smalltalk
+  * [Smalltalk](/wiki/smalltalk)
+  * [Seaside on Smalltalk](/wiki/seaside_on_smalltalk)
+
+### Other Languages
+  * [Haskell](/wiki/haskell)
+  * [Erlang](/wiki/erlang)
+  * [Tcl](/wiki/tcl)
+  * [C](/wiki/c)
+  * [Python](/wiki/python)
+  * [VB](/wiki/vb)
+  * [IKVM](/wiki/ikvm)
+  * [Mono](/wiki/mono)
+
+### General Programming
+  * [Aspect Oriented Programming](/wiki/aspect_oriented_programming)
+  * [Metaprogramming](/wiki/metaprogramming)
+  * [code blocks](/wiki/code_blocks)
+  * [Inversion of Control](/wiki/inversion_of_control)
+  * [Generics](/wiki/generics)
+  * [Closures](/wiki/closures)
+  * [Design Patterns](/wiki/design_patterns)
+  * [Aspect Oriented Programming](/wiki/aspect_oriented_programming)
+  * [Inversion of Control](/wiki/inversion_of_control)
+### Development Environments
+  * [Eclipse](/wiki/eclipse)
+  * [vi](/wiki/vi)
+
+### Resources
+  * [Service-oriented architecture](/wiki/service-oriented_architecture)
+  * [Web Services](/wiki/web_services)
+  * [REST](/wiki/rest)
+
+## Operating Systems
+### Linux
+  * [Linux](/wiki/linux)
+  * [Linux Networking](/wiki/linux_networking)
+  * [Linux Useful Commands](/wiki/linux_useful_commands)
+  * [Security](/wiki/security)
+  * [grep](/wiki/grep)
+  * [awk](/wiki/awk)
+  * [bash](/wiki/bash)
+  * [tar](/wiki/tar)
+  * [iptables](/wiki/iptables)
+  * [samba](/wiki/samba)
+
+## Databases
+
+### MySQL
+  * [MySQL](/wiki/mysql)
+### Oracle
+  * [Oracle](/wiki/oracle)
+### Misc
+  * [Databases](/wiki/databases)
+  * [Postgres](/wiki/postgres)
+  * [Database Theory](/wiki/database_theory)
+
+## Web
+### General
+  * [Web](/wiki/web)
+  * [HTML](/wiki/html)
+  * [XML](/wiki/xml)
+  * [CSS](/wiki/css)
+  * [Web Design](/wiki/web_design)
+  * [Graphics](/wiki/graphics)
+  * [Ajax](/wiki/ajax)
+  * [Streaming Video](/wiki/streaming_video)
+
+### Servers
+  * [Apache](/wiki/apache)
+  * [Tomcat](/wiki/tomcat)
+  * [Mongrel](/wiki/mongrel)
+  * [IIS](/wiki/iis)
+
+### Security
+  * [Security](/wiki/security)
+  * [XSS](/wiki/xss)
+  * [SQL Injection](/wiki/sql_injection)
+  * [Captcha](/wiki/captcha)
+
+### Software
+  * **[Excel](/wiki/excel)**
+  * [Software](/wiki/software)
+  * [Photoshop](/wiki/photoshop)
+  * [Illustrator](/wiki/illustrator)
+  * [Windows](/wiki/windows)
+  * [Outlook](/wiki/outlook)
+  * [Open Exchange](/wiki/open_exchange)
+  * [Powerpoint](/wiki/powerpoint)
+  * [Utilities](/wiki/utilities)
+  * [Software](/wiki/software)
+
+### Misc
+
+  * [Misc](/wiki/misc)
+  * [Networking](/wiki/networking)
+  * [Open Source](/wiki/open_source)
+  * [People](/wiki/people)
+  * [eXtreme Programming](/wiki/extreme_programming)
+  * [Regular Expressions](/wiki/regular_expressions)
+  * [Software Engineering](/wiki/software_engineering)
+## Data
+### XML
+  * [Castor](/wiki/castor)
+  * [XPath](/wiki/xpath)
+  * [XSLT](/wiki/xslt)
+### Microformats
+  * [Microformats](/wiki/microformats)
+
+### RDF
+  * [RDF](/wiki/rdf)
+### Excel
+  * [Excel](/wiki/excel)
+
+## Sysadmin
+
+
+### Version Control
+  * [git](/wiki/git)
+  * [CVS](/wiki/cvs)
+  * [Subversion](/wiki/subversion)
+  * [Cruise Control](/wiki/cruise_control)
 
 
 
-===== Hardware =====
-  * [[Media Server]]
-  * [[My Laptop]]
-  * [[PBX]]
-===== Design =====
-  * [[Photoshop]]
-  * [[Typography]]
-  * [[Illustrator]]
-  * [[Fonts]]
-  * [[Advertising Banners]]
+## Hardware
+  * [Media Server](/wiki/media_server)
+  * [My Laptop](/wiki/my_laptop)
+  * [PBX](/wiki/pbx)
+## Design
+  * [Photoshop](/wiki/photoshop)
+  * [Typography](/wiki/typography)
+  * [Illustrator](/wiki/illustrator)
+  * [Fonts](/wiki/fonts)
+  * [Advertising Banners](/wiki/advertising_banners)
 
-===== Media =====
-  * [[OrbTV]] - A Television server
+## Media
+  * [OrbTV](/wiki/orbtv) - A Television server
 
-==== New Pages (to sort) ====
+### New Pages (to sort)
 
-  * [[Portlets]]
-  * [[Continuous programming]]
-  * [[Marshmallow]]
-  * [[Notes]]
-  * [[People]]
-  * [[Links]]
-  * [[Business]]
-  * [[CMS]]
-  * [[Mozilla]]
-  * [[MP3]]
-  * [[dokuwiki]]
-  * [[Jolt Awards]]
-  * [[Good Blogs]]
-  * [[Vim]]
+  * [Portlets](/wiki/portlets)
+  * [Continuous programming](/wiki/continuous_programming)
+  * [Marshmallow](/wiki/marshmallow)
+  * [Notes](/wiki/notes)
+  * [People](/wiki/people)
+  * [Links](/wiki/links)
+  * [Business](/wiki/business)
+  * [CMS](/wiki/cms)
+  * [Mozilla](/wiki/mozilla)
+  * [MP3](/wiki/mp3)
+  * [dokuwiki](/wiki/dokuwiki)
+  * [Jolt Awards](/wiki/jolt_awards)
+  * [Good Blogs](/wiki/good_blogs)
+  * [Vim](/wiki/vim)
 
 
-  * [[OrbTV]] - A Television server
+  * [OrbTV](/wiki/orbtv) - A Television server
 
-===== Hardware =====
-  * [[Storage Server]]
+## Hardware
+  * [Storage Server](/wiki/storage_server)
   
 
 
-===== Other =====
-  * [[Topics Todo]]
-
+## Other
+  * [Topics Todo](/wiki/topics_todo)

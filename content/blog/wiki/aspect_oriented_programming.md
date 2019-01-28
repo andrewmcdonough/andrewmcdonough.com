@@ -1,15 +1,10 @@
-====== Aspect Oriented Programming ======
-
-
-
-
+# Aspect Oriented Programming
 
 crosscutting concerns, weaving
 
+## Crosscutting Concerns
 
-===== Crosscutting Concerns =====
-
-A crosscutting concern a convern that is outside the problem domain.
+A crosscutting concern a concern that is outside the problem domain.
 
 Examples:
 
@@ -18,10 +13,4 @@ Examples:
   * Debugging
   * Security Access across classes
 
-
-
-
-
-
 http://en.wikipedia.org/wiki/AspectJ
-

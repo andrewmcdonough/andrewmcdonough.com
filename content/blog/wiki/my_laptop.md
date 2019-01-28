@@ -1,8 +1,8 @@
-====== My Laptop ======
+# My Laptop
 Sony Vaio FS115E
 
 
-====== Network ======
+# Network
 1394 Net AdapterDriver: Microsoft
 5.1.2535
 c:\windows\system43\drivers\nic1394.sys

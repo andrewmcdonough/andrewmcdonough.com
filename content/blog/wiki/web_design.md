@@ -1,22 +1,22 @@
-====== Web Design ======
+# Web Design
 
-===== Scope =====
+## Scope
 
 This document covers design principles and *not* technologies.  For technologes please visit the following links:
-  * [[HTML]]
-  * [[Javascript]]
-  * [[CSS]]
+  * [HTML](/wiki/html)
+  * [Javascript](/wiki/javascript)
+  * [CSS](/wiki/css)
 
 
-===== Speed =====
-[[WebSiteOptimization.com]]
+## Speed
+[WebSiteOptimization.com](/wiki/websiteoptimization.com)
 
-===== Affordances =====
+## Affordances
 In design, an affordance is a visual clue to the function of an object.
 
-===== Accessiblity =====
+## Accessiblity
 Bobby is a free portal which can validate the accessiblity of a site:
-[[http://bobby.watchfire.com/bobby/html/en/index.jsp]]
+[http://bobby.watchfire.com/bobby/html/en/index.jsp](/wiki/http://bobby.watchfire.com/bobby/html/en/index.jsp)
 
 There are serveral sets of guidelines:
   * Web Content Accessibility Guidelines 1.0
@@ -24,8 +24,8 @@ There are serveral sets of guidelines:
 
 
 
-===== Links =====
+## Links
 
-[[http://www.webstyleguide.com/]]
-[[http://www.alistapart.com/]]
-[[http://www.autisticcuckoo.net/archive.php?id=2005/04/08/doctype-declaration-and-content-type-headers]]
+[http://www.webstyleguide.com/](/wiki/http://www.webstyleguide.com/)
+[http://www.alistapart.com/](/wiki/http://www.alistapart.com/)
+[http://www.autisticcuckoo.net/archive.php?id=2005/04/08/doctype-declaration-and-content-type-headers](/wiki/http://www.autisticcuckoo.net/archive.php?id=2005/04/08/doctype-declaration-and-content-type-headers)

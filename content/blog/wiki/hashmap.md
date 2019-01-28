@@ -1,14 +1,14 @@
-====== HashMap ======
+# HashMap
 
-[[http://java.sun.com/j2se/1.4.2/docs/api/java/util/HashMap.html|HashMap]] is a hash based implementation of the Map interface.
+[http://java.sun.com/j2se/1.4.2/docs/api/java/util/HashMap.html|HashMap](/wiki/http://java.sun.com/j2se/1.4.2/docs/api/java/util/hashmap.html|hashmap) is a hash based implementation of the Map interface.
 
-===== Constructors =====
+## Constructors
   HashMap = new Hashmap();
   HashMap = new Hashmap(int initial Capacity);
   ...  
 
 
-===== Userful functions =====
+## Userful functions
 
 ^returns^method^description^
 |void|clear() | remove all mappings|
@@ -22,4 +22,4 @@
 
 \\
 \\
-See [[http://java.sun.com/j2se/1.4.2/docs/api/java/util/HashMap.html]] for all.
+See [http://java.sun.com/j2se/1.4.2/docs/api/java/util/HashMap.html](/wiki/http://java.sun.com/j2se/1.4.2/docs/api/java/util/hashmap.html) for all.

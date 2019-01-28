@@ -1,8 +1,7 @@
-====== Object Orientation ======
+# Object Orientation
 
-===== CRC =====
+## CRC
 
   * Class
   * Responsibility
   * Collaboration
-

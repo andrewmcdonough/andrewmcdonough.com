@@ -1,4 +1,4 @@
-====== Java Beans ======
+# Java Beans
 
 
 A bean is reusable software software component.
@@ -22,4 +22,4 @@ Enterprise Java Beans are Entity Beans
 
 Entity beans model business 'Nouns'
 
-[[http://www.unix.org.ua/orelly/java-ent/ebeans/ch06_01.htm]]
+[http://www.unix.org.ua/orelly/java-ent/ebeans/ch06_01.htm](/wiki/http://www.unix.org.ua/orelly/java-ent/ebeans/ch06_01.htm)

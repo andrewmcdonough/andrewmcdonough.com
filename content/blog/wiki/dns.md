@@ -1,4 +1,4 @@
-====== DNS ======
+# DNS
 
 The name server daemon in linux is called named.  It uses databases, often stored in /var/named/
 
@@ -12,17 +12,17 @@ When a server is the authority for a domain, it usually has a zone file in /var/
   }
 
 
-===== Name server settings =====
+## Name server settings
 The name server is specified in /etc/resolv.conf
 
 
-===== DIG =====
+## DIG
 To find out the dns settings of a domain, use dig
 
   dig andrewmcdonough.co.uk
   dig -t mx andrewmcdonough.co.uk
 
-===== Root Name Servers =====
+## Root Name Servers
 The root name servers are 13 servers distributed around the world and operated by nine different organisations.  They are called:
 
 A.ROOT-SERVERS.NET, B.ROOT-SERVERS.NET, ... , M.ROOT-SERVERS.NET

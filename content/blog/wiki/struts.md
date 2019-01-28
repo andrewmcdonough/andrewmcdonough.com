@@ -1,4 +1,4 @@
-====== Struts ======
+# Struts
 
 
 Use Mesage Resources to handle multiple languages and to avoid hard coding text.
@@ -9,7 +9,7 @@ Use BeanUtils CopyProperties and CopyProperty to populate form beans from busine
 
 
 
-==== BeanUtils ====
+### BeanUtils
 Transferring data between tiers can prove a pain, particularly having to check for null values and converting to the appropriate type.  Fortunatley Jakarta provide two useful methods that will look after this for you:
 
   CopyProperties(Object dest, Object src)

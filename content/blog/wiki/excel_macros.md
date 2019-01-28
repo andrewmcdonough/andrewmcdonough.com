@@ -1,4 +1,4 @@
-====== Excel Macros ======
-==== Macros using relative references ====
+# Excel Macros
+### Macros using relative references
   * One of the annoying things about recording Excel Macros, is that their default behaviour will record **absolute ** references to the cells operated on.  You can change this, so that the Macro will operate on cells **relative** to the starting one.  This behaviour is much more desirable.  This is done by clicking the **Reletive Reference** button in the **Stop Recording** toolbar.  It is fairly likely that this toolbar is not enabled.  You can enable it by going to **View->Toolbars->Customize...**, then checking **Stop recording** under the Toolbars tab.  Alternatively, activate it programatically from VBA:
   Application.CommandBars("Stop Recording").Visible = True

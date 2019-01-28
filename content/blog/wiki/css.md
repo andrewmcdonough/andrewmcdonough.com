@@ -1,7 +1,7 @@
-====== Cascading Style Sheets ======
+# Cascading Style Sheets
 
 
-==== Setting the style of a disabled form element ====
+### Setting the style of a disabled form element
 
   input[disabled] {
     color: black;

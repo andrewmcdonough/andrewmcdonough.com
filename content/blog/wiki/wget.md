@@ -1,4 +1,4 @@
-====== wget ======
+# wget
 
 wget is a a command line utility used to download files over http
 

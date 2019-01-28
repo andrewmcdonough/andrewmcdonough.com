@@ -1,4 +1,4 @@
-====== Oracle Sequences ======
+# Oracle Sequences
 Oracle sequences are held in a special table and are created using the syntax:
 
   CREATE SEQUENCE <SCHEMA>.<NAME>
@@ -34,9 +34,3 @@ e.g.
 
 
   INSERT INTO person (id, name) values (select person_seq.nextval, "chappy" from dual);
-
-
-
-
-
-

@@ -1,4 +1,4 @@
-====== Eclipse ======
+# Eclipse
 
 
 ^ Key ^ Action ^
@@ -9,26 +9,26 @@
 | Ctrl-Space   | List available  |
 
 \\
-[[http://dev.eclipse.org/viewcvs/index.cgi/platform-ui-home/accessibility/keys.html?rev=1.9|List of Keys]]
+[http://dev.eclipse.org/viewcvs/index.cgi/platform-ui-home/accessibility/keys.html?rev=1.9|List of Keys](/wiki/http://dev.eclipse.org/viewcvs/index.cgi/platform-ui-home/accessibility/keys.html?rev=1.9|list_of_keys)
 \\
 
 MyEclipse is a proprietory suite of Eclipse addones
 
 
 
-===== Plugins =====
+## Plugins
 
 XMLBuddy is the most popular Eclipse XML editing tool.
-[[http://xmlbuddy.com/]]
+[http://xmlbuddy.com/](/wiki/http://xmlbuddy.com/)
 
 Javascript Plugin:
-[[http://sourceforge.net/projects/jseditor/]]
+[http://sourceforge.net/projects/jseditor/](/wiki/http://sourceforge.net/projects/jseditor/)
 
 Tail 
-[[http://sourceforge.net/project/showfiles.php?group_id=78831&release_id=198590]]
+[http://sourceforge.net/project/showfiles.php?group_id=78831&release_id=198590](/wiki/http://sourceforge.net/project/showfiles.php?group_id=78831&release_id=198590)
 
 
-[[http://www.eclipse.org/eclipse/faq/eclipse-faq.html]]
+[http://www.eclipse.org/eclipse/faq/eclipse-faq.html](/wiki/http://www.eclipse.org/eclipse/faq/eclipse-faq.html)
 
 
 Ganymead - a log4j reader

@@ -1,6 +1,6 @@
-====== Database Theory ======
+# Database Theory
 
-===== ACID Properties =====
+## ACID Properties
 ACID Properties are the key properties of transaction processing within a database.  A transaction is usually a collection of one or more statements.
   * **Atomicity** - Transactions either occur (all queries commit) or don't (rolled back executed queries reversed).
   * **Consistency** - All constraints of the database must be satisfied before and after a transaction.
@@ -9,6 +9,6 @@ ACID Properties are the key properties of transaction processing within a databa
 
 http://en.wikipedia.org/wiki/ACID
 
-===== Normalization =====
+## Normalization
 
 http://en.wikipedia.org/wiki/Database_normalization

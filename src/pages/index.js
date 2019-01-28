@@ -20,7 +20,7 @@ class BlogIndex extends React.Component {
         />
         <Bio />
         {posts
-          .filter(edge => !!edge.node.frontmatter.homepage)
+          .filter(edge => !!edge.node.frontmatter.date)
           .map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (

@@ -1,13 +1,13 @@
-====== Portsentry ======
+# Portsentry
 
-===== Installation =====
+## Installation
 
 tar -xvzf portsentry-x.xx.tar.gz
 cd portsentry-x.xx
 make linux
 make install
 
-===== Configuration =====
+## Configuration
 
 Configuration is via the portsentry.conf file.
   TCP_PORTS="list,of,ports,to,block,[..]"
@@ -21,4 +21,4 @@ Configuration is via the portsentry.conf file.
 
 
 
-[[http://linux.cudeso.be/linuxdoc/portsentry.php]]
+[http://linux.cudeso.be/linuxdoc/portsentry.php](/wiki/http://linux.cudeso.be/linuxdoc/portsentry.php)

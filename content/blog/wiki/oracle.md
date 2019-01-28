@@ -1,13 +1,13 @@
-====== Oracle ======
+# Oracle
 
-===== Differences from MySQL =====
+## Differences from MySQL
   * Quoting must be done using single quotes (') not double quotes (")
 
 
-===== SQL*Plus =====
+## SQL*Plus
 SQL*Plus is annoying as it has no command editing, completion or history.  gqlplus is a better implementation which has all of these so should be used instead.  Below, gqlplus will be referred to as SQL*plus.
 
-[[http://gqlplus.sourceforge.net/]]
+[http://gqlplus.sourceforge.net/](/wiki/http://gqlplus.sourceforge.net/)
 
 You can connect to an oracle on database by launching SQL*Plus on the command line:
 
@@ -22,12 +22,12 @@ You can run sql scripts at the command line by entering
 
 gqlplus - This is a replacement for sqlplus with command editing, command completion and command histories.
 
-===== SQL Navigator =====
+## SQL Navigator
 
 F3 goes to run SQL
 
 
-===== Aliases =====
+## Aliases
 
 Oracle database aliases are defined in the tnsnames.ora file.  Use *locate* to find this.  The alias definitions are in the form:
 
@@ -35,7 +35,7 @@ Oracle database aliases are defined in the tnsnames.ora file.  Use *locate* to f
    (DESCRIPTION =
 
      (ADDRESS_LIST =
-       (ADDRESS = (PROTOCOL = TCP)(HOST = 217.158.112.240)(PORT = 1522))
+###### (PROTOCOL = TCP)(HOST = 217.158.112.240)(PORT
      )
      (CONNECT_DATA =
        (SERVICE_NAME = prodsdb)
@@ -44,10 +44,10 @@ Oracle database aliases are defined in the tnsnames.ora file.  Use *locate* to f
 
 Where PRODSDB is the alias name
 
-===== Oracle and PHP =====
+## Oracle and PHP
 PHP usually comes with functions built in to connect to Oracle databases.  The most modern of these is the Oracle Call Interface (OCI).  All functions belonging to this interface have the prefix OCI.
 
-==== Interacting with the database using OCI ====
+### Interacting with the database using OCI
   $connection = OCILogin($username, $password, $database_alias);
   $query = "SELECT * FROM sometable";
   $statement = OCIParse($connection, $query);
@@ -57,7 +57,7 @@ PHP usually comes with functions built in to connect to Oracle databases.  The m
   }
 
 
-===== Reference =====
+## Reference
 
 
 

@@ -1,4 +1,4 @@
-====== Jetty ======
+# Jetty
 Jetty is an Open Source Java Servlet Container
 
 

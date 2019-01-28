@@ -1,4 +1,4 @@
-====== Security ======
+# Security
 
-  * [[Portsentry]]
-  * [[SSL]]
+  * [Portsentry](/wiki/portsentry)
+  * [SSL](/wiki/ssl)

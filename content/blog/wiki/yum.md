@@ -1,4 +1,4 @@
-====== yum - update manager ======
+# yum - update manager
 
 yum (Yellowdog Update, Modified)  is a package updater for Linux, based on rpm.  It is a rewrite of yup and is an alternative to apt-get, (Yellowdog UPdate)
 
@@ -15,14 +15,10 @@ yum (Yellowdog Update, Modified)  is a package updater for Linux, based on rpm. 
   * List Packages
   yum list "*package*"
 
-==== Settind up third party repositories  ====
+### Settind up third party repositories 
 Download repository definitions to /etc/yum.depos.d/
 
 e.g.
   /etc/yum.depos.d/
   wget http://wilsonet.com/mythtv/atrpms.repo
   wget http://wilsonet.com/mythtv/freshrpms.repo 
-
-
-
-

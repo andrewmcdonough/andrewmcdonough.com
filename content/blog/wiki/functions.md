@@ -1,19 +1,19 @@
-====== Oracle Functions ======
+# Oracle Functions
 
 
 
 
-===== Strings =====
+## Strings
 
   * CONCAT(s1,s2) - Concatenates s1 and s2.  It is probably easier to use the || operator.
 
 
-===== Number =====
+## Number
 
 
 
-===== Time =====
+## Time
 
 
 
-===== Group =====
+## Group

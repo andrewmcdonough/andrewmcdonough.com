@@ -1,4 +1,4 @@
-====== sed ======
+# sed
 
 sed is a stream editor.  It takes input from a file, processes it, and outputs to STDOUT:
 

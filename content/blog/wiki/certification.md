@@ -1,4 +1,4 @@
-====== Java Certification ======
+# Java Certification
 
 
 Sun's Java Certification Path
@@ -11,5 +11,4 @@ http://www.jchq.net/essentials/
 
 http://uk.sun.com/training/catalog/courses/CX-310-055.xml
 
-===== Sun Certified Java Programmer =====
-
+## Sun Certified Java Programmer

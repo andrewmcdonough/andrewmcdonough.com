@@ -1,4 +1,4 @@
-====== Open Exchange ======
+# Open Exchange
 
 
 Delete all calendar appointments belonging to a particular user:

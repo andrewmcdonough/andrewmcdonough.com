@@ -1,11 +1,11 @@
-====== Linux Networking ======
+# Linux Networking
 
-===== Monitoring =====
-with [[netstat]] :
+## Monitoring
+with [netstat](/wiki/netstat) :
 netstat -a | grep LISTEN
 
 
-===== Network Configuration =====
+## Network Configuration
 In Debian the network settings are specified in /etc/network/interfaces
 In Redhat and Mandrake, this is found in /etc/sysconfig/network
 A network configuration file looks like this:
@@ -20,11 +20,11 @@ In Fedora/Redhat, on machines with a static IP address, this is set in /etc/sysc
   NETWORK=192.168.254.0
   ...
 The name server is specified in a separate file, usually **/etc/resolv.conf**
-==== Starting a network device ====
+### Starting a network device
   ifconfig <device> <ip> netmask <netmask> up
   e.g. ifconfig eth0 192.168.0.1 255.255.255.0 up
 
-==== Stopping a network device ====
+### Stopping a network device
   ifconfig eth0 down
 
 Setting the dafault gateway
@@ -36,7 +36,7 @@ And the network interface is configured:
 
 
 
-===== Name Servers =====
+## Name Servers
 Name Servers are specified in
 /etc/resolv.conf 
 you must restart the name daemon to take effect (e.g. kill the process then /usr/local/sbin/named -u named)

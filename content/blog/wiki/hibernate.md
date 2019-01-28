@@ -1,7 +1,7 @@
-====== Hibernate ======
+# Hibernate
 
 
-===== <Classname>.hbm.xml =====
+## <Classname>.hbm.xml
 
   <?xml version="1.0"?>
   <!DOCTYPE hibernate-mapping PUBLIC
@@ -17,7 +17,7 @@
         </class>
   </hibernate-mapping>
 
-===== hibernate.cfg.xml =====
+## hibernate.cfg.xml
 Contains general hibernate configuration
 
 Example:
@@ -51,8 +51,8 @@ Example:
   * Always use object rather than primitives for the id, i.e. Long rather than long
 
 
-[[http://www.systemmobile.com/articles/IntroductionToHibernate.html]]
-[[http://www.allapplabs.com/hibernate/hibernate_query_language.htm]]
+[http://www.systemmobile.com/articles/IntroductionToHibernate.html](/wiki/http://www.systemmobile.com/articles/introductiontohibernate.html)
+[http://www.allapplabs.com/hibernate/hibernate_query_language.htm](/wiki/http://www.allapplabs.com/hibernate/hibernate_query_language.htm)
 
 
 http://wiki.apache.org/cocoon/CocoonAndHibernateTutorial

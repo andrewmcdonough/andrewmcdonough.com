@@ -1,4 +1,4 @@
-====== Linux Filesystems ======
+# Linux Filesystems
 
 Finding available disks: 
   fdisk -l
@@ -15,7 +15,7 @@ e.g.
 smb mounts are windows network mounts
 
 
-===== Managing Disk Space =====
+## Managing Disk Space
 
 df - displays disk information\\
 du - show disk use of a directory.  du -s recurses though subdirectories\\

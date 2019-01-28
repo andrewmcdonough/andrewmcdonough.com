@@ -1,9 +1,9 @@
-====== Vim ======
+# Vim
 
 Vim is the most popular clone of the vi text editor, and is my text editor of choice for programming.
 
 
-===== .vimrc =====
+## .vimrc
 
   set noautoindent
   set tabstop=2
@@ -15,5 +15,3 @@ Vim is the most popular clone of the vi text editor, and is my text editor of ch
   map ;w oprint STDERR "\n";<ESC>hhhi
 
   map ;e :!php  %<CR>
-
-

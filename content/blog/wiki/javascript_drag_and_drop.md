@@ -1,4 +1,4 @@
-====== Javascript Drag and Drop ======
+# Javascript Drag and Drop
 
 
 http://youngpup.net/

@@ -1,4 +1,4 @@
-====== Separation of Concerns ======
+# Separation of Concerns
 
 A concern is a goal or purpose.  
 
@@ -16,4 +16,3 @@ Data concerns - a class
 
 
 http://www.research.ibm.com/hyperspace/
-

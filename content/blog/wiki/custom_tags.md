@@ -1,4 +1,4 @@
-====== JSP Custom Tags ======
+# JSP Custom Tags
 
 
 Tag extension mechanism
@@ -24,7 +24,7 @@ all attributes are populated by calling standard setter methods
 
 
 
-===== Evaluating Expressions =====
+## Evaluating Expressions
 
 
   String eValue = "";
@@ -39,4 +39,3 @@ all attributes are populated by calling standard setter methods
   }
 
 ${bean.value} is called an EL expression (Expression Language Expression)
-

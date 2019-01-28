@@ -1,15 +1,15 @@
-====== Perl ======
+# Perl
 
-==== Getting Input ====
+### Getting Input
 my $myvar = <STDIN>;
 chomp($myvar);
 
-==== Command Line Arguments ====
+### Command Line Arguments
 
   * @ARGV is initialised as the array of arguments
   * $#ARGV is the subscript of the last element
 
-==== Executing Shell Commands ====
+### Executing Shell Commands
 Backticks are used to execute commands and return the input to the perl script e.g.
   $result = `$command`;
 exec is used to launch a command when the output is to be directed to STDOUT e.g.
@@ -17,8 +17,8 @@ exec is used to launch a command when the output is to be directed to STDOUT e.g
 
 
 
-====== Examples ======
-=== A Perl Script to find possible matches for a file and open choice of match in Vim ===
+# Examples
+#### A Perl Script to find possible matches for a file and open choice of match in Vim
   #!/usr/bin/perl
   my $file = $ARGV[0];
   my $locate = `locate $file`;
@@ -35,6 +35,6 @@ exec is used to launch a command when the output is to be directed to STDOUT e.g
   exec $command;
 
 
-===== Bibliography =====
+## Bibliography
 
 http://www.comp.leeds.ac.uk/Perl/start.html

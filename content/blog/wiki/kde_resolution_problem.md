@@ -1,4 +1,4 @@
-===== KDE Resolution Problem =====
+## KDE Resolution Problem
 
 I recently installed KDE on an old machine.  I accidentally selected a resolution the graphic card didn't support.  I fixed this by:
 

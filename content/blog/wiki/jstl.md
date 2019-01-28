@@ -1,4 +1,4 @@
-====== JSTL ======
+# JSTL
 
 JSTL (JSP Standard Tag Library) is a collection of JSP tags included in the J2EE spec.  It actually consists of five sets of tags
 
@@ -9,15 +9,15 @@ JSTL (JSP Standard Tag Library) is a collection of JSP tags included in the J2EE
   * **functions** - Expression Language functions
 
 
-===== Header =====
+## Header
 
   <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 
-===== Assignment =====
+## Assignment
 
   <c:set var="myvar" value="value"/>
 
-===== Reading variables =====
+## Reading variables
 
   <c:out value="${myvar}"/>
 
@@ -27,13 +27,13 @@ Request atttibutes, request.getAttribute("name") are not needed, the are accesse
 
 
 
-===== Loops =====
+## Loops
   <c:forEach items="${somelist}" var="element">
     do something with ${element}
   </c:forEach>
 
 
-===== If else becomes choose when =====
+## If else becomes choose when
   <c:choose>
     <c:when test="sometest">
       do something when test is true
@@ -57,4 +57,3 @@ Request atttibutes, request.getAttribute("name") are not needed, the are accesse
 
 
 "${not empty address.lastName}" 
-

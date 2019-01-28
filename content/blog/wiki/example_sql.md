@@ -1,8 +1,8 @@
-====== Example SQL ======
+# Example SQL
 
 The following is purely for my own reference.
 
-===== Get all tables =====
+## Get all tables
   SELECT * FROM ALL_TABLES WHERE OWNER = 'BASE';
 
 
@@ -18,6 +18,6 @@ The following is purely for my own reference.
   INSERT INTO BASE.ADDRESS (ID,ADDRESS,PERSON_ID, POST_CODE,ADDRESS_TYPE_ID,COUNTRY_ID) VALUES ('2','Roadside Croft, Netherley, , Stonehaven, , UK, AB39 3QL','2','','42','10');
 
 
-===== Replacing Commas with newlines =====
+## Replacing Commas with newlines
 
   UPDATE BASE.ADDRESS SET ADDRESS = TRANSLATE(ADDRESS, ',', chr(10)); 

@@ -1,4 +1,4 @@
-====== dokuwiki ======
+# dokuwiki
 
 My wiki is currently powered by dokuwiki.
 

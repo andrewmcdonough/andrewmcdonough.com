@@ -1,4 +1,4 @@
-====== Quartz ======
+# Quartz
 
 Quartz is an open source Java scheduling framework.
 

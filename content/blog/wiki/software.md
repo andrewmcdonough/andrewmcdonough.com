@@ -1,8 +1,8 @@
-====== Software ======
+# Software
 
-===== Adobe =====
-  * [[Illustrator]]
-  * [[Photoshop]]
-  * [[Acrobat]]
-  * [[Imageready]]
-  * [[Premiere]]
+## Adobe
+  * [Illustrator](/wiki/illustrator)
+  * [Photoshop](/wiki/photoshop)
+  * [Acrobat](/wiki/acrobat)
+  * [Imageready](/wiki/imageready)
+  * [Premiere](/wiki/premiere)

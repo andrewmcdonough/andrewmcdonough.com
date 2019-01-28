@@ -1,17 +1,17 @@
-===== bash =====
+## bash
 
-===== Header =====
+## Header
 
   #!/bin/bash
 
-===== Variables =====
+## Variables
 Assignment
   X="hello"
 note that there should be no space on either side of the equals sign
 Referring to
   echo $X
 
-===== Conditionals =====
+## Conditionals
   if [ condition ]
   then
     statements
@@ -20,7 +20,7 @@ Referring to
   fi
 
 
-===== Operators =====
+## Operators
 
 
 ^ Operator ^ Meaning ^
@@ -38,7 +38,7 @@ Referring to
 | -f       | File existence test |
 
 
-===== Iteration =====
+## Iteration
 
 Iterate over files and print their names:
   for i in $(ls); do echo $i; done
@@ -49,7 +49,7 @@ Iterate over .zip files and extract them
 
 
 
- ===== Examples =====
+## Examples
 
 Accepting input
 The following bash script accepts a parameter or prompts for the value if it is not supplied.  For the sake of the example, it simply echos this to STDOUT
@@ -67,6 +67,6 @@ The following bash script accepts a parameter or prompts for the value if it is 
 
 
 
-===== Useful Links =====
+## Useful Links
 
   * http://www.cyberciti.biz/faq/bash-for-loop/

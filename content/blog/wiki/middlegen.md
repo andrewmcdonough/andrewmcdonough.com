@@ -1,11 +1,11 @@
-====== Middlegen ======
+# Middlegen
 
 Middlegen is a utility to automate the generation of database reliant code.
 
-===== Quick Guide =====
-  * Download Middlegen from [[sourceforge]] http://sourceforge.net/project/showfiles.php?group_id=36044
+## Quick Guide
+  * Download Middlegen from [sourceforge](/wiki/sourceforge) http://sourceforge.net/project/showfiles.php?group_id=36044
   * Extract into a suitable directory e.g. c:\java\middlegen
-  * If you don't have it, download and install [[Ant]]
+  * If you don't have it, download and install [Ant](/wiki/ant)
   * Build by running ant in the Middlegen directory
   * Copy the samples directory and rename to your project directory
   * Modify build.xml to point to the correct database and change appropriate property namings
@@ -14,11 +14,11 @@ Middlegen is a utility to automate the generation of database reliant code.
 
 
 
-===== Middlegen for Hibernate =====
+## Middlegen for Hibernate
 
 
 
 
 
 
-[[http://boss.bekk.no/boss/middlegen/]]
+[http://boss.bekk.no/boss/middlegen/](/wiki/http://boss.bekk.no/boss/middlegen/)

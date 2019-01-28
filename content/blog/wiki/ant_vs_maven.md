@@ -1,4 +1,4 @@
-====== Ant Vs Maven ======
+# Ant Vs Maven
 
 
 Ant has problems with dependencies.  Artificats and libraries need to be copied from one project to another.
@@ -20,4 +20,3 @@ Ant promotes copying and pasting the build specification
 Maven lets you use and when you want.
 
 Maven has lots of plugins
-

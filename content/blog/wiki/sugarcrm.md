@@ -1,4 +1,4 @@
-====== SugarCRM ======
+# SugarCRM
 
 
   chown apache.apache config.php

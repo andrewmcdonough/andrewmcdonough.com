@@ -1,7 +1,7 @@
-====== PHP5 ======
+# PHP5
 
 
-===== Autoloading objects =====
+## Autoloading objects
 
 To save the hassle of requiring all modules, the autoload function can be used to load object libraries as they are needed:
 

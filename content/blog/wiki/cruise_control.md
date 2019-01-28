@@ -1,9 +1,9 @@
-====== Cruise Control ======
+# Cruise Control
 
-Cruise control is a framework to assist [[continuous integration]].
+Cruise control is a framework to assist [continuous integration](/wiki/continuous_integration).
 
 
-===== Links =====
+## Links
 
   * http://www.martinfowler.com/articles/continuousIntegration.html
   * http://cruisecontrol.sourceforge.net/

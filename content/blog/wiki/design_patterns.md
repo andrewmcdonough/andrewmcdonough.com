@@ -1,14 +1,14 @@
-====== Design Patterns ======
-===== Common Patterns =====
+# Design Patterns
+## Common Patterns
 
-  * [[DAO]] - Data Access Object.  Objects which handle storage of data e.g. in a database
-  * [[TemplatePattern|Template]] - Dividing interface from implementation
+  * [DAO](/wiki/dao) - Data Access Object.  Objects which handle storage of data e.g. in a database
+  * [TemplatePattern|Template](/wiki/templatepattern|template) - Dividing interface from implementation
 
 \\
 \\
 \\
 
-  * [[Separation Of Concerns]]
+  * [Separation Of Concerns](/wiki/separation_of_concerns)
 
 
 A design pattern usually consists of:
@@ -20,12 +20,12 @@ A design pattern usually consists of:
   * **the implementation** - making the pattern work in practice \\
   * **cases** - successful applications of the pattern
 
-===== The Description =====
+## The Description
 
 Consists of:
   * **participants** - the objects that interact
 
 
-[[Cross Cutting Concern]]
+[Cross Cutting Concern](/wiki/cross_cutting_concern)
 
-[[http://java.sun.com/developer/technicalArticles/J2EE/patterns/]]
+[http://java.sun.com/developer/technicalArticles/J2EE/patterns/](/wiki/http://java.sun.com/developer/technicalarticles/j2ee/patterns/)

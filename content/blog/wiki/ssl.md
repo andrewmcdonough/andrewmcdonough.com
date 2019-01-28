@@ -1,4 +1,4 @@
-====== SSL ======
+# SSL
 
 Certificates are normally held in /etc/httpd/ssl.crt
 
@@ -9,4 +9,4 @@ openssl x509 -noout -text -in contacts.sportcentric.com.crt
 
 
 
-[[http://rimuhosting.com/howto/modssl.jsp]]
+[http://rimuhosting.com/howto/modssl.jsp](/wiki/http://rimuhosting.com/howto/modssl.jsp)

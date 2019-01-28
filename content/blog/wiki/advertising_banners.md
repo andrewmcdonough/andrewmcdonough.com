@@ -1,4 +1,4 @@
-====== Advertising Banners ======
+# Advertising Banners
 
 
 Advertising banners on websites come in a number of standard sizes:

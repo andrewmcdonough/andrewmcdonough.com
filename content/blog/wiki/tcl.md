@@ -1,6 +1,6 @@
-====== Tcl ======
-===== Syntax =====
-==== Variables ====
+# Tcl
+## Syntax
+### Variables
 Tcl supports scalar variables and associative arrays.
 
 Variables can be assigned and read using the **set** command.
@@ -37,13 +37,13 @@ The expr keyword is used to mean evaluate and substitute.
 
 
 
-==== Arrays ====
+### Arrays
 
 
 
-==== Control Flow ====
+### Control Flow
 
-=== If ===
+#### If
   if {$a > 5} {
     set a 0
   }
@@ -59,7 +59,7 @@ The expr keyword is used to mean evaluate and substitute.
 Note that the start brace *must* appear on the same line as the if statement.
 
 
-=== Loops ===
+#### Loops
 
   foreach i $a {
   }

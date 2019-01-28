@@ -1,6 +1,6 @@
-====== Taglibs ======
+# Taglibs
 
-===== Jakarta Mailer =====
+## Jakarta Mailer
 
   <mt:mail>
         <mt:server><%= mailServer %></mt:server>
@@ -14,4 +14,3 @@
         </mt:error>
         </mt:send>
   </mt:mail>
-

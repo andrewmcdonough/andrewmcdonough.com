@@ -11,10 +11,22 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
+    const showWikiWarning = this.props.location.pathname.indexOf("/wiki") >= 0
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
+        {showWikiWarning &&
+            <p
+              style={{
+                border: `solid 1px #ccc`,
+                padding: `10px`,
+              }}
+            >
+              Please note: This page is imported from my wiki, which hasn't been updated in over 10 years. Some of
+              the formatting was lost during the import. I'll try to get around to fixing it someday.
+            </p>
+        }
         <h1>{post.frontmatter.title}</h1>
         <p
           style={{

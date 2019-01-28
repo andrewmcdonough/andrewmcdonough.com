@@ -1,4 +1,4 @@
-====== JSP ======
+# JSP
 
 
-  * [[Custom Tags]]
+  * [Custom Tags](/wiki/custom_tags)

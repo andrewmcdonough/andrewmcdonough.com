@@ -1,3 +1,3 @@
-====== KDE ======
+# KDE
 
-  * [[KDE Resolution Problem]]
+  * [KDE Resolution Problem](/wiki/kde_resolution_problem)

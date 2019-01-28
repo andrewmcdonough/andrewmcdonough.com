@@ -1,4 +1,4 @@
-====== iptables ======
+# iptables
 
 
   iptables -I INPUT -s xxx.xxx.xxx.xxx -j DROP
@@ -26,7 +26,7 @@ Saves
   iptables-restore < /etc/iptables.conf
 Restores
 
-===== Using as a firewall =====
+## Using as a firewall
 
 use the output chain to drop all requests on port 80
   -A OUTPUT -p tcp -m tcp --dport 80 -j DROP
@@ -37,4 +37,3 @@ then accept ips that you want
 
 Adding on command line
   iptables -I OUTPUT -s 217.158.112.246 -d destinationIP -p tcp --dport 80 -j ACCEPT
-

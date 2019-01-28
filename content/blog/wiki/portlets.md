@@ -1,4 +1,4 @@
-====== Portlets ======
+# Portlets
 
 Portlets are reusable web components that can be dropped into a portal that adheres to the standards.
 

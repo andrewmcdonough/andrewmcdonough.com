@@ -1,20 +1,20 @@
-====== Javascript ======
+# Javascript
 
-  * [[Rhino]] - A Javascript implementation in Java
-  * [[Javascript Drag and Drop]]
-  * [[DOM]]
-  * [[Javascript Arrays|Arrays]]
-  * [[Javascript Strings|Strings]]
-===== Strings =====
+  * [Rhino](/wiki/rhino) - A Javascript implementation in Java
+  * [Javascript Drag and Drop](/wiki/javascript_drag_and_drop)
+  * [DOM](/wiki/dom)
+  * [Javascript Arrays|Arrays](/wiki/javascript_arrays|arrays)
+  * [Javascript Strings|Strings](/wiki/javascript_strings|strings)
+## Strings
   s.substring(start,end)
   s.split(delimiter)
 
-===== Arrays =====
+## Arrays
 
 
 
-===== Control Flow =====
-==== for in loops ====
+## Control Flow
+### for in loops
 
   for (variable in object){
     // do something ( can use object[variable] for value )
@@ -27,19 +27,19 @@ For example, to show all properties of the current document
 
 
 
-===== Useful Functions =====
+## Useful Functions
 
-==== Type checking ====
+### Type checking
 isNumber(val)
 
-===== Timeouts =====
+## Timeouts
 Events can be set to make a function run after a given number of milliseconds:
   setTimeout("functionName()", 100);
 To get an even to repeat, put this call inside the function itself and call it from body.onLoad
 
 
 
-===== Events =====
+## Events
   * onAbort - image
   * onBlur - select, text, text area
   * onChange - select, text, textarea
@@ -62,13 +62,13 @@ Event handlers can also be defined by naming an event handler.  For example
 
 Note:  The event handler when assigned should not be followed by parentheses
 
-===== Debugging =====
+## Debugging
 
 
 http://gleepglop.com/javascripts/logger/
 
-===== Examples =====
-==== Set as homepage ====
+## Examples
+### Set as homepage
 This probably only works in Internet Explorer
   <A HREF="#"
   onClick="this.style.behavior='url(#default#homepage)';
@@ -81,7 +81,3 @@ http://www.javascripttoolbox.com/  - with a fantastic javascript calendar.  Chee
 
 
 http://prototype.conio.net/
-
-
-
-

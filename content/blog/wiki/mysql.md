@@ -1,9 +1,9 @@
-====== MySQL ======
-  * [[Getting started with MySQL]]
-  * [[MySQL Indexing]]
+# MySQL
+  * [Getting started with MySQL](/wiki/getting_started_with_mysql)
+  * [MySQL Indexing](/wiki/mysql_indexing)
 
-==== SQL ====
-=== Creating a table ===
+### SQL
+#### Creating a table
   CREATE TABLE sometable (
     id int(11) NOT NULL auto_increment,
     name varchar(40) default NULL,
@@ -12,8 +12,8 @@
   ) TYPE=MyISAM;
 
 
-===== Admin =====
-==== Starting ====
+## Admin
+### Starting
 
 To start MySQL, run the mysql daemon, mysqld_safe e.g.
 
@@ -23,16 +23,16 @@ Sometimes (e.g. on Kellis) you need to specify where the data files are held:
 
   <PATH_TO_MYSQL>/mysqld_safe --datadir=/usr/local/var/lib/mysql
 
-==== Monitoring ====
+### Monitoring
 You can see what connections MySQL has open by running:
   mysql-standard-4.0.21-pc-linux-i686]# bin/mysqladmin processlist -p
 
 
-===== Adding a user =====
+## Adding a user
   GRANT ALL PRIVILEGES ON dbname.* TO 'username'@'localhost' IDENTIFIED BY 'password' 
 
-===== SQL Reference =====
-==== Mathematic Functions ====
+## SQL Reference
+### Mathematic Functions
 POW(X,Y) \\
 POWER(X,Y) \\
 SQRT(X)
@@ -44,6 +44,6 @@ N MOD M
 RAND() \\
 RAND(N)
 
-==== Resetting Auto Increment ====
+### Resetting Auto Increment
 
   ALTER TABLE <tablename>  AUTO_INCREMENT= <number> ;

@@ -1,4 +1,4 @@
-====== SSH Tunneling ======
+# SSH Tunneling
 
 You can use an SSH connection to tunnel a connection on another port to a third sever on an internal network.  Chose an abitrary port e.g. 1234 
 

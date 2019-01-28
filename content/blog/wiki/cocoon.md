@@ -1,10 +1,10 @@
-====== Cocoon ======
-Cocoon is an [[XML]] publishing framework developed on top of the [[Avalon]] Server Framework.
+# Cocoon
+Cocoon is an [XML]] publishing framework developed on top of the [[Avalon](/wiki/xml]]_publishing_framework_developed_on_top_of_the_[[avalon) Server Framework.
 
 Separation of Concerns - Making user people can interact and collaborate on a project without getting in each others way.
 
 
-===== Installing Cocoon on Tomcat =====
+## Installing Cocoon on Tomcat
   * Download the cocoon tar
   * Extract it
   * To build the war file run 
@@ -33,7 +33,7 @@ Copy cocoon.properties from cocoon's root directory to $CATALINA_HOME/conf/
   * cocoon.xconf -
   * cocoon.roles - mapping file - mappings for implementations to names - if the default implementation is to be overrides
 
-===== sitemap.xmap =====
+## sitemap.xmap
 	
 
   <?xml version="1.0" encoding="iso-8859-1"?>
@@ -59,14 +59,14 @@ Each generator has a unique name and is mapped to a java class
 The logger attribute defines where messages produced by a component should go
 
 
-===== cocoon.xconf =====
+## cocoon.xconf
 Contains settings for all cocoon applications.
 
 
 XSPs - eXtensivel Server Pages
 The Cocoon equivalent of a JSP - they contain both content and login and can import functionality via logicsheets cf. taglibs.
 
-===== Synchronous and Asynchronous loading =====
+## Synchronous and Asynchronous loading
   * When synchronous loading is used, the servlet waits until the new version of the page is generated.
   * When asynchronous loading is used new request use the old sitemap until compilation of the new one is complete.
 
@@ -76,7 +76,7 @@ The type of loading is found in cocoon.xconf under the reload-method property.
 
 
 
-==== How to read the cache ====
+### How to read the cache
   <map:match pattern="*/*/">
     <map:select type="resource-exists">
       <map:when test="cache/{1}/{2}/index.html">
@@ -92,21 +92,21 @@ The type of loading is found in cocoon.xconf under the reload-method property.
     </map:select> 
   </map:match>   
 
-===== JX Templates =====
+## JX Templates
 http://cocoon.apache.org/2.1/userdocs/flow/jxtemplate.html
 
-We use [[http://jakarta.apache.org/commons/jexl/|JEXL]]
+We use [http://jakarta.apache.org/commons/jexl/|JEXL](/wiki/http://jakarta.apache.org/commons/jexl/|jexl)
 
-===== Bibliography =====
+## Bibliography
 
 
-  * [[http://www.w3.org/TR/xslt|WC3 Standards]]
-  * [[http://localhost:8080/cocoon/docs/userdocs/concepts/index.html]]
-  * [[http://cocoon.apache.org/2.1/howto/howto-html-pdf-publishing.html]]
-  * [[http://wiki.apache.org/cocoon/DistributingCocoonApplications]]
-  * [[http://cocoon.apache.org/2.1/tutorial/#Third-Party+Tutorials]]
-  * [[http://cocoon.apache.org/2.1/tutorial/tutorial-develop-webapp.html]]
-  * [[http://www.javaworld.com/javaworld/jw-09-2002/jw-0920-cocoon.html]]
+  * [http://www.w3.org/TR/xslt|WC3 Standards](/wiki/http://www.w3.org/tr/xslt|wc3_standards)
+  * [http://localhost:8080/cocoon/docs/userdocs/concepts/index.html](/wiki/http://localhost:8080/cocoon/docs/userdocs/concepts/index.html)
+  * [http://cocoon.apache.org/2.1/howto/howto-html-pdf-publishing.html](/wiki/http://cocoon.apache.org/2.1/howto/howto-html-pdf-publishing.html)
+  * [http://wiki.apache.org/cocoon/DistributingCocoonApplications](/wiki/http://wiki.apache.org/cocoon/distributingcocoonapplications)
+  * [http://cocoon.apache.org/2.1/tutorial/#Third-Party+Tutorials](/wiki/http://cocoon.apache.org/2.1/tutorial/#third-party+tutorials)
+  * [http://cocoon.apache.org/2.1/tutorial/tutorial-develop-webapp.html](/wiki/http://cocoon.apache.org/2.1/tutorial/tutorial-develop-webapp.html)
+  * [http://www.javaworld.com/javaworld/jw-09-2002/jw-0920-cocoon.html](/wiki/http://www.javaworld.com/javaworld/jw-09-2002/jw-0920-cocoon.html)
 
-  * [[http://new.cocoondev.org/main/index.html]]
-  * [[http://cocoon.apache.org/2.1/userdocs/flow/jxtemplate.html]]
+  * [http://new.cocoondev.org/main/index.html](/wiki/http://new.cocoondev.org/main/index.html)
+  * [http://cocoon.apache.org/2.1/userdocs/flow/jxtemplate.html](/wiki/http://cocoon.apache.org/2.1/userdocs/flow/jxtemplate.html)

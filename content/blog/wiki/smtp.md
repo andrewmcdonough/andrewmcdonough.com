@@ -1,11 +1,11 @@
-====== SMTP ======
+# SMTP
 
 SMTP is the standard protocol used to deliver email.
 
-===== How to send email via SMTP =====
+## How to send email via SMTP
 In this example, I will demonstrate how to send an email to the email address someuser@andrewmcdonough.com
 
-===== Identifying the MX record for the domain =====
+## Identifying the MX record for the domain
 
 First, find the MX record for the domain you wish to send email to:
 
@@ -21,7 +21,7 @@ The reply should contain an **ANSWER SECTION**.  I use Google for my email, so I
   
 This shows there are four potential mail servers you can use to deliver email to this user.  The final column in this reply is the name of the server and the penultimate column is the priority.  Identify the one with the highest priority, in this case 1, which gives the mail server aspmx.l.google.com.
 
-===== Connecting to the mail server =====
+## Connecting to the mail server
 
 You now need to connect to the mail server identified above on port 25.
 
@@ -61,10 +61,3 @@ That's it.  The email has been sucessfully sent.  You can now quit the session b
   quit
   221 2.0.0 closing connection 8si10778608ewy.61
   Connection closed by foreign host.
-
-
-
-
-
-
-

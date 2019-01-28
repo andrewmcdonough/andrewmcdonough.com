@@ -1,19 +1,19 @@
-====== Programming ======
+# Programming
 
-====== Major Technologies ======
+# Major Technologies
 
-  * [[Java]]
-  * [[PHP]]
-  * [[Perl]]
-  * [[.NET]]
-  * [[Tcl]]
-  * [[Javascript]]
-  * [[HTML]]
-  * [[CSS]]
-  * [[Regular Expressions]]
+  * [Java](/wiki/java)
+  * [PHP](/wiki/php)
+  * [Perl](/wiki/perl)
+  * [.NET](/wiki/.net)
+  * [Tcl](/wiki/tcl)
+  * [Javascript](/wiki/javascript)
+  * [HTML](/wiki/html)
+  * [CSS](/wiki/css)
+  * [Regular Expressions](/wiki/regular_expressions)
 
 
-====== Minor Technologies ======
+# Minor Technologies
 
-  * [[IKVM]]
-  * [[Mono]]
+  * [IKVM](/wiki/ikvm)
+  * [Mono](/wiki/mono)

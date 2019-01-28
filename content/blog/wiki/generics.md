@@ -1,4 +1,4 @@
-====== Generics ======
+# Generics
 
   * Generics are a feature of a programming language that allows one variable to take different types depending on its context. (?)
   * This is most useful when dealing with collections
@@ -7,7 +7,7 @@
 
 
 
-===== Generics in Java =====
+## Generics in Java
 Consider pulling an element out of a list in Java.  When the next() method is called, the object needs to be cast to the appropriate type.  If the type is not correct, this will not usually be realised until runtime.  Generics in Java allow us to tell the compiler what type of object to expect, catching type mismatch errors at compile time.
 
 
@@ -17,7 +17,7 @@ The implementation of Generics in Java is a highly contovertial topic.  Generics
 
 
 
-===== Useful Links ====
+### Useful Links
   * http://java.sun.com/docs/books/tutorial/java/javaOO/generics.html
   * http://java.sun.com/j2se/1.5/pdf/generics-tutorial.pdf
   * http://en.wikipedia.org/wiki/Generic_programming

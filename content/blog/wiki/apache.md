@@ -1,6 +1,6 @@
-====== Apache ======
+# Apache
 
-  * [[Apache Mulitprocessing]]
+  * [Apache Mulitprocessing](/wiki/apache_mulitprocessing)
 
 
 To restart in Mandrake (eg Mars)
@@ -10,8 +10,6 @@ To restart in Mandrake (eg Mars)
 To restart in RedHat
 
 /etc/rc.d/init.d/httpd restart
-
-
 
 
 ===== Authentication with .htaccess=====
@@ -31,19 +29,19 @@ And enter a password
   Require user andrew
 </Directory>
 
-[[http://httpd.apache.org/docs-2.0/howto/auth.html]]
+[http://httpd.apache.org/docs-2.0/howto/auth.html](/wiki/http://httpd.apache.org/docs-2.0/howto/auth.html)
 
 
-===== Logging =====
+## Logging
 IPs are best written to logs in IP form, not name form.  To process and acquire names, use the logresolve utility or the perl logresolve.pl
 
-==== Rotation ====
+### Rotation
 Logs can be rotated to keep them small
 
-==== Changing security claims ====
+### Changing security claims
 You may have problems in Internet Explorer with IFRAMES accessing cookies.  In order to get around this, add the following to the .htaccess file in the directory that writes the cookie:
   header append P3P 'CP="CAO DSP COR CURa ADMa DEVa OUR IND PHY ONL UNI COM NAV INT DEM PRE"'
 You must, however, tell the web server to read the .htaccess file (AllowOverride Options FileInfo)
 
 
-[[http://www.apcmag.com/apc/v3.nsf/0/0E1F5FECE427AAB4CA256D44001ABB45?OpenDocument]]
+[http://www.apcmag.com/apc/v3.nsf/0/0E1F5FECE427AAB4CA256D44001ABB45?OpenDocument](/wiki/http://www.apcmag.com/apc/v3.nsf/0/0e1f5fece427aab4ca256d44001abb45?opendocument)

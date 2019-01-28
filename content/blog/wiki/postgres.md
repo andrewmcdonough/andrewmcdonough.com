@@ -1,17 +1,17 @@
-====== Postgres ======
-===== Logging in: =====
+# Postgres
+## Logging in:
 
   su - postgres
   psql <database>
 
-===== Common Commands =====
+## Common Commands
   \dt - show tables
   \l - show databases
   \d <table> - describe table
 
 
-===== Command line tools =====
+## Command line tools
 
-=== Dump database ===
+#### Dump database
 
   pg_dump <dbname> >file

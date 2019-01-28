@@ -1,5 +1,5 @@
-====== TCP/IP ======
+# TCP/IP
 
-===== TCP =====
+## TCP
 
 For a list of port see /etc/services

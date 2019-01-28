@@ -1,4 +1,4 @@
-====== instanceof ======
+# instanceof
 
 In Java, instanceof is an operator to test whether an object is an instance of a particular class.
 

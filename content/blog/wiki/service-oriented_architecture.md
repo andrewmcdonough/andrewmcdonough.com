@@ -1,3 +1,3 @@
-====== Service-Oriented Architecure (SOA) ======
+# Service-Oriented Architecure (SOA)
 
-A Service-Oriented Archicture is one where rather than having one large, enterprise application, the business requirements are divided up into finer grained **services**.  These services are loosely coupled and communicate by sending messages to one another, usually over a network.  This is often done over the web, via [[web services]] (as defined by IBM or Microsoft), or in the lighter form of [[REST]] (Representation State Transfer).
+A Service-Oriented Archicture is one where rather than having one large, enterprise application, the business requirements are divided up into finer grained **services**.  These services are loosely coupled and communicate by sending messages to one another, usually over a network.  This is often done over the web, via [web services]] (as defined by IBM or Microsoft), or in the lighter form of [[REST](/wiki/web_services]]_(as_defined_by_ibm_or_microsoft),_or_in_the_lighter_form_of_[[rest) (Representation State Transfer).
