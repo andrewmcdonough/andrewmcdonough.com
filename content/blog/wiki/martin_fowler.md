@@ -1,0 +1,3 @@
+====== Martin Fowler ======
+
+Martin Fowler is one of the best authors of [[OOP]] books.  I recommend his books [[UML Distilled]] and [[Patterns of Enterprise Application Architecture]].  His website (http://www.martinfowler.com/) has fantastic explainations of [[Dependency Injection]] ([[Inversion of Control]]) and various important [[Design Patterns]].  His [[http://www.martinfowler.com/bliki/|bliki]] is definitely worth a read.
