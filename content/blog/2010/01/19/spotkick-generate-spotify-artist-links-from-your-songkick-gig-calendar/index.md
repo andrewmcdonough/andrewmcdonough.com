@@ -1,6 +1,6 @@
 ---
 title: Spotkick - Generate Spotify artist links from your Songkick gig calendar
-date: '2019-01-31T08:32:57:z'
+date: '2010-01-31T08:32:57Z'
 ---
  ## Update (2019)
 
