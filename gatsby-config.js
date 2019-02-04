@@ -3,7 +3,7 @@ module.exports = {
     title: `Andrew McDonough`,
     author: `Andrew McDonough`,
     description: `Andrew McDonough's Personal Website`,
-    siteUrl: `https://andrewmcdonough.com.netlify.com/`,
+    siteUrl: `https://www.andrewmcdonough.com/`,
     disqusShortname: `andrewmcdonough`,
     social: {
       twitter: `andrewmcdonough`,

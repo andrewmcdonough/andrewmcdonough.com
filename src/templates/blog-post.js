@@ -14,10 +14,12 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
     const showWikiWarning = this.props.location.pathname.indexOf("/wiki") >= 0
     const disqusShortname = this.props.data.site.siteMetadata.disqusShortname
+    const siteUrl = this.props.data.site.siteMetadata.siteUrl
     const disqusConfig = {
+      url: siteUrl + this.props.location.pathname,
       identifier: post.id,
       title: post.frontmatter.title,
-    };
+    }
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -92,6 +94,8 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        disqusShortname
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
