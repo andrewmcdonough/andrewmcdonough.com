@@ -1,6 +1,8 @@
 ---
 title: "Ruby Poetry"
 date: '2012-02-23T10:00:00.000Z'
+disqusIdentifier: 'http://andrewmcdonough.github.com/blog/2012/02/23/ruby-poetry/'
+disqusUrl: 'http://andrewmcdonough.github.com/blog/2012/02/23/ruby-poetry/'
 ---
 
 On Tuesday evening, I gave a 20 slide 'lightning talk' at the <a href='http://lrug.org'>London Ruby Users Group (LRUG)</a> entitled "Ruby Poetry".  Inspired by <a href='http://twitter.com/hlame'>Murray Steele</a>'s "<a href='http://skillsmatter.com/podcast/ajax-ria/my-first-ruby'>My First Ruby</a>" talk at a previous LRUG, I decided to tell a story about a small progam I wrote about five years ago, when I was fairly new to Ruby.  At the time, I had just made the transition to Ruby after years as Java developer, and I was amazed at how easy it was to solve problems without having to write very much code.

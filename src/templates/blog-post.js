@@ -16,8 +16,8 @@ class BlogPostTemplate extends React.Component {
     const disqusShortname = this.props.data.site.siteMetadata.disqusShortname
     const siteUrl = this.props.data.site.siteMetadata.siteUrl
     const disqusConfig = {
-      url: siteUrl + this.props.location.pathname,
-      identifier: post.id,
+      url: post.frontmatter.disqusUrl || (siteUrl + this.props.location.pathname),
+      identifier: post.frontmatter.disqusIdentifier || post.id,
       title: post.frontmatter.title,
     }
 
@@ -105,6 +105,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        disqusIdentifier
+        disqusUrl
       }
     }
   }
