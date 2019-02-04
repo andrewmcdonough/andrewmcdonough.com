@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
+import { DiscussionEmbed } from "disqus-react";
 import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
@@ -12,6 +13,11 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
     const showWikiWarning = this.props.location.pathname.indexOf("/wiki") >= 0
+    const disqusShortname = this.props.data.site.siteMetadata.disqusShortname
+    const disqusConfig = {
+      identifier: post.id,
+      title: post.frontmatter.title,
+    };
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -41,6 +47,7 @@ class BlogPostTemplate extends React.Component {
           </p>
         }
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
         <hr
           style={{
             marginBottom: rhythm(1),

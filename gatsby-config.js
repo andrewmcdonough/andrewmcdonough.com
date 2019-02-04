@@ -4,6 +4,7 @@ module.exports = {
     author: `Andrew McDonough`,
     description: `Andrew McDonough's Personal Website`,
     siteUrl: `https://andrewmcdonough.com.netlify.com/`,
+    disqusShortname: `andrewmcdonough`,
     social: {
       twitter: `andrewmcdonough`,
     },
