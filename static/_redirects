@@ -1,2 +1,4 @@
-https://blog.andrewmcdonough.com/*  https://www.andrewmcdonough.com/:splat
-https://naughty-lamport-89a7e7.netlify.com/* https://www.andrewmcdonough.com/:splat
+https://blog.andrewmcdonough.com/*  https://www.andrewmcdonough.com/:splat 301!
+http://blog.andrewmcdonough.com/*  https://www.andrewmcdonough.com/:splat 301!
+https://naughty-lamport-89a7e7.netlify.com/* https://www.andrewmcdonough.com/:splat 301!
+http://naughty-lamport-89a7e7.netlify.com/* https://www.andrewmcdonough.com/:splat 301!
