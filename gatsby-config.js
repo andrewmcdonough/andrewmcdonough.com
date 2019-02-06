@@ -3,7 +3,7 @@ module.exports = {
     title: `Andrew McDonough`,
     author: `Andrew McDonough`,
     description: `Andrew McDonough's Personal Website`,
-    siteUrl: `https://www.andrewmcdonough.com/`,
+    siteUrl: `https://www.andrewmcdonough.com`,
     disqusShortname: `andrewmcdonough`,
     social: {
       twitter: `andrewmcdonough`,
@@ -75,5 +75,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-sitemap`,
   ],
 }
