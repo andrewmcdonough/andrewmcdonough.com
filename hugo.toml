@@ -26,8 +26,8 @@ enableRobotsTXT = true
   url = "https://github.com/andrewmcdonough"
 
 [params.homeInfoParams]
-  Title = "Andrew McDonough"
-  Content = "Consultant CTO and software developer, currently based between Berlin and London."
+  Title = "Hi, I'm Andrew"
+  Content = "I'm currently based in Berlin and working as CTO of CaptionHub."
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
