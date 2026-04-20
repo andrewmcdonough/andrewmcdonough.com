@@ -2,6 +2,7 @@
 title: Colorized Logs in Ruby
 date: '2009-10-31T08:54:34Z'
 url: /2009/10/20/colorized-logs-in-ruby/
+homepage: true
 ---
 
 ## Update (2019)

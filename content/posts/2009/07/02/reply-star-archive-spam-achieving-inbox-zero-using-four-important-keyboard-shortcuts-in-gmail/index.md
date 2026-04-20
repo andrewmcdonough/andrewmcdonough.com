@@ -2,6 +2,7 @@
 title: Reply/Star/Archive/Spam - Achieving Inbox Zero using four important keyboard shortcuts in Gmail
 date: '2009-07-02T13:51:55Z'
 url: /2009/07/02/reply-star-archive-spam-achieving-inbox-zero-using-four-important-keyboard-shortcuts-in-gmail/
+homepage: true
 ---
 
 It's easy to let your email get on top of you.  Fortunately, since I moved to <a href="http://www.google.com/a/cpanel/domain/new" target="_new">Gmail for my domain</a>, it has been to be a lot easier to avoid being overcome by an overcrowded inbox.  For the last year or so, I have been trying to implement <a href="http://www.43folders.com/izero" target="_new">Inbox Zero</a>, a system that I first heard about from productivity expert <a href="http://www.merlinmann.com/" target="_new">Merlin Mann</a>.  It involves processing your inbox regularly and moving all emails to a trusted place where they can be processed later.  After a single pass, your inbox should be empty.

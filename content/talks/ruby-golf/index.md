@@ -1,6 +1,7 @@
 ---
 title: 'Talk: Ruby Golf'
 date: '2011-05-09T13:30:58Z'
+homepage: true
 ---
 
 On 9th May 2011, I ran a coding competition at the [London Ruby Users Group](https://lrug.org). People were asked to form teams of 4-8 people, and solve nine short ruby golf 'holes' using as few characters as possible. Each hole was defined by [a set of RSpec examples](https://github.com/andrewmcdonough/rubygolf) describing a single method, and the teams had to write the method to pass all of the examples. The team with all tests passing using the fewest number of charaters would be declared the winner.

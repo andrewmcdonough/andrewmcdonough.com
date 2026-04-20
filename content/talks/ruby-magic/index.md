@@ -1,6 +1,7 @@
 ---
 title: Ruby Magic
 date: '2015-06-08T15:19:37Z'
+homepage: true
 ---
 
 On 8th June 2015 I gave a talk to the [London Ruby Users Group](https://lrug.org) entitled *Ruby Magic*.  For this talk, I recreated several popular magic tricks in Ruby, including [cups and balls](https://en.wikipedia.org/wiki/Cups_and_balls), turning water into wine, and [sawing a person in half](https://en.wikipedia.org/wiki/Sawing_a_woman_in_half).

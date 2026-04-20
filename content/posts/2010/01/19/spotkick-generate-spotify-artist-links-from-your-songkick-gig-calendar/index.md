@@ -2,6 +2,7 @@
 title: Spotkick - Generate Spotify artist links from your Songkick gig calendar
 date: '2010-01-31T08:32:57Z'
 url: /2010/01/19/spotkick-generate-spotify-artist-links-from-your-songkick-gig-calendar/
+homepage: true
 ---
  ## Update (2019)
 
