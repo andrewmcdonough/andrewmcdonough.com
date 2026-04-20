@@ -1,3 +1,0 @@
-# CMS
-
-http://opensourcecms.com/

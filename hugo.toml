@@ -1,0 +1,41 @@
+baseURL = "https://www.andrewmcdonough.com"
+title = "Andrew McDonough"
+theme = "PaperMod"
+languageCode = "en-us"
+paginate = 10
+enableRobotsTXT = true
+
+[params]
+  author = "Andrew McDonough"
+  description = "Andrew McDonough's Personal Website"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+
+[[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/andrewmcdonough"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/andrewmcdonough"
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/andrewmcdonough"
+
+[params.homeInfoParams]
+  Title = "Andrew McDonough"
+  Content = "Consultant CTO and software developer, currently based between Berlin and London."
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup.highlight]
+  style = "monokai"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[permalinks]
+  posts = "/:year/:month/:day/:slug/"

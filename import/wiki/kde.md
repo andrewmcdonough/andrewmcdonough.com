@@ -1,3 +1,0 @@
-====== KDE ======
-
-  * [[KDE Resolution Problem]]

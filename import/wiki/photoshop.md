@@ -1,4 +1,0 @@
-====== Photoshop ======
-
-
-Removing Red-Eye
