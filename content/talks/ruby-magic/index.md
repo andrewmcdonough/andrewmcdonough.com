@@ -1,5 +1,5 @@
 ---
-title: Ruby Magic
+title: "Talk: Ruby Magic"
 date: '2015-06-08T15:19:37Z'
 homepage: true
 ---

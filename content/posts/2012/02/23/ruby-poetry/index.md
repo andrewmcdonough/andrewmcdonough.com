@@ -1,5 +1,5 @@
 ---
-title: "Ruby Poetry"
+title: "Talk: Ruby Poetry"
 date: '2012-02-23T10:00:00.000Z'
 disqusIdentifier: 'http://andrewmcdonough.github.com/blog/2012/02/23/ruby-poetry/'
 disqusUrl: 'http://andrewmcdonough.github.com/blog/2012/02/23/ruby-poetry/'
