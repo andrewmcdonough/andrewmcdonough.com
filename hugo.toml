@@ -5,6 +5,9 @@ languageCode = "en-us"
 paginate = 10
 enableRobotsTXT = true
 
+[services.googleAnalytics]
+  ID = "G-GKLTCTS978"
+
 [params]
   author = "Andrew McDonough"
   mainSections = ["posts", "talks"]
