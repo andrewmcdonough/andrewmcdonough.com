@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#d3e8d5",
+                    "surface-tint": "#506354",
+                    "on-surface-variant": "#434843",
+                    "tertiary-fixed-dim": "#cbc6b9",
+                    "tertiary-container": "#5b584d",
+                    "primary-container": "#4a5d4e",
+                    "error": "#ba1a1a",
+                    "on-surface": "#1b1c1b",
+                    "on-primary-fixed": "#0e1f13",
+                    "outline-variant": "#c3c8c1",
+                    "on-secondary": "#ffffff",
+                    "inverse-on-surface": "#f2f0ef",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#303030",
+                    "primary-fixed-dim": "#b7ccb9",
+                    "on-background": "#1b1c1b",
+                    "on-primary-fixed-variant": "#394b3d",
+                    "on-primary-container": "#c0d5c2",
+                    "on-error": "#ffffff",
+                    "surface-dim": "#dbdad9",
+                    "surface-container": "#efedec",
+                    "secondary-fixed-dim": "#bccbb5",
+                    "tertiary": "#434137",
+                    "secondary-fixed": "#d8e7d0",
+                    "primary": "#334537",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#e9e8e7",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#e4e2e1",
+                    "secondary": "#556250",
+                    "on-secondary-container": "#5b6856",
+                    "error-container": "#ffdad6",
+                    "outline": "#737872",
+                    "background": "#fbf9f8",
+                    "on-primary": "#ffffff",
+                    "surface-container-low": "#f5f3f2",
+                    "surface-container-highest": "#e4e2e1",
+                    "on-secondary-fixed": "#131e11",
+                    "secondary-container": "#d8e7d0",
+                    "surface-bright": "#fbf9f8",
+                    "on-tertiary-fixed": "#1d1c13",
+                    "on-tertiary-container": "#d3cfc1",
+                    "inverse-primary": "#b7ccb9",
+                    "on-secondary-fixed-variant": "#3d4a3a",
+                    "surface": "#fbf9f8",
+                    "tertiary-fixed": "#e7e2d4",
+                    "on-tertiary-fixed-variant": "#49473c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "lg": "24px",
+                    "xl": "48px",
+                    "unit": "4px",
+                    "margin": "64px",
+                    "xs": "4px",
+                    "md": "16px",
+                    "sm": "8px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "caption": ["Noto Serif"],
+                    "label-sm": ["Noto Serif"],
+                    "body-md": ["Noto Serif"],
+                    "body-lg": ["Noto Serif"],
+                    "headline-md": ["Noto Serif"],
+                    "headline-xl": ["Noto Serif"],
+                    "headline-lg": ["Noto Serif"]
+            },
+            "fontSize": {
+                    "caption": ["14px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-xl": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #fbf9f8;
+            color: #1b1c1b;
+        }
+        .botanical-rule {
+            height: 1px;
+            background-color: #dcd7c9;
+            width: 100%;
+            margin: 24px 0;
+        }
+        .specimen-label {
+            background-color: #d3e8d5;
+            padding: 2px 8px;
+            font-family: 'Noto Serif', serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border: 1px solid #c3c8c1;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-background selection:bg-primary-fixed">
+<header class="bg-stone-50 dark:bg-stone-950 w-full border-b border-stone-200 dark:border-stone-800 border-b-[1px]">
+<div class="max-w-7xl mx-auto px-16 flex justify-between items-center h-24">
+<a class="font-serif italic text-2xl text-emerald-900 dark:text-emerald-500 scale-100 opacity-100 hover:opacity-80 transition-colors duration-300" href="#">Andrew McDonough</a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-stone-500 dark:text-stone-400 font-medium hover:text-emerald-800 dark:hover:text-emerald-300 transition-colors duration-300 font-serif tracking-tight" href="#">Archive</a>
+<a class="text-emerald-900 dark:text-emerald-400 border-b border-emerald-900 dark:border-emerald-400 pb-1 hover:text-emerald-800 dark:hover:text-emerald-300 transition-colors duration-300 font-serif tracking-tight" href="#">Observations</a>
+<a class="text-stone-500 dark:text-stone-400 font-medium hover:text-emerald-800 dark:hover:text-emerald-300 transition-colors duration-300 font-serif tracking-tight" href="#">Specimens</a>
+<a class="text-stone-500 dark:text-stone-400 font-medium hover:text-emerald-800 dark:hover:text-emerald-300 transition-colors duration-300 font-serif tracking-tight" href="#">Library</a>
+<a class="text-stone-500 dark:text-stone-400 font-medium hover:text-emerald-800 dark:hover:text-emerald-300 transition-colors duration-300 font-serif tracking-tight" href="#">About</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-stone-500" data-icon="search">search</span>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-16 py-xl grid grid-cols-12 gap-gutter">
+<article class="col-span-12 lg:col-span-8 flex flex-col">
+<header class="mb-xl">
+<nav class="mb-md flex items-center gap-2">
+<span class="specimen-label">Index No. 884-A</span>
+<span class="text-caption font-caption italic text-outline">Botanical Folio</span>
+</nav>
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-md">An Inquiry into the Ferns of the Northern Highlands</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic leading-relaxed">Recorded observations regarding the morphology and adaptive strategies of Pteridophyta within calcareous soil structures.</p>
+</header>
+<section class="mb-xl">
+<figure class="relative border border-outline-variant p-sm bg-surface-container-lowest">
+<div class="aspect-[4/5] overflow-hidden bg-stone-100 flex items-center justify-center border border-outline-variant">
+<img alt="Botanical illustration" class="w-full h-full object-cover mix-blend-multiply opacity-90" data-alt="Detailed vintage botanical illustration of a fern frond with intricate spores on a yellowed aged paper background, lithograph style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbYMup80nixS8dkMD4mU7EvTl5ZftusUWK_4o3dlJCDLPHpfQdCSJnNgPt3983YNA7T1r8RYL46yuwmrkq3FW4nKSejBsO4nKau4BT1oPxGlDeUapJAZFjTwXG-ulGDxF_ovmtx3v5tcimFWv6l1KEHj2aPz49pXrZAAbwmJn57c3pyf4gyEJUqyqonnyIJJ54DvMDIacxuEN0OWn8Bi5l3r6DFLUKM7yHhNYrG9M-GnmoAHC6QHwta6TphHdXZ3DymbQ8WtY8iOg"/>
+</div>
+<figcaption class="mt-md px-md pb-md">
+<p class="font-caption text-caption italic text-center text-on-surface-variant">
+                            Plate XIV. — <span class="font-bold not-italic">Dryopteris filix-mas</span>. Observed near the limestone outcroppings of the lower valley. Note the bipinnate architecture.
+                        </p>
+</figcaption>
+</figure>
+</section>
+<div class="space-y-lg text-on-surface font-body-md text-body-md leading-loose">
+<p>
+                    The ascent toward the ridge was marked by a distinct shift in the floral composition. As the humidity increased under the canopy of ancient oaks, the presence of the male fern became more pronounced. It is a specimen of remarkable resilience, flourishing where others might wither under the weight of the persistent Highland mist.
+                </p>
+<blockquote class="pl-lg border-l-2 border-primary italic text-on-surface-variant my-xl">
+                    "Nature never hurries, yet every spore finds its destination. In the silence of the forest floor, a vast intelligence unfolds one frond at a time."
+                </blockquote>
+<p>
+                    Upon closer inspection of the specimen gathered (Ref. Specimen 42), the sori are arranged in two rows near the midrib. The indusia are kidney-shaped, a hallmark of this particular genus. Under the glass, the intricate patterns of the veins reveal a complex hydraulic system, refined over millennia of evolution in these damp climes.
+                </p>
+<div class="botanical-rule"></div>
+<p>
+                    The soil samples extracted from the immediate vicinity show a high concentration of calcium carbonate, confirming the preference of this variant for alkaline conditions. Further study is required to determine the impact of seasonal temperature fluctuations on the maturation cycle of the spores.
+                </p>
+</div>
+<footer class="mt-xl pt-lg border-t border-outline-variant">
+<div class="flex items-center gap-md">
+<button class="bg-primary text-on-primary px-lg py-sm border border-primary font-label-sm text-label-sm hover:opacity-90 transition-opacity">
+                        ANNOTATE RECORD
+                    </button>
+<button class="bg-transparent text-primary px-lg py-sm border border-primary font-label-sm text-label-sm hover:bg-primary-fixed transition-colors">
+                        DOWNLOAD FOLIO (PDF)
+                    </button>
+</div>
+</footer>
+</article>
+<aside class="col-span-12 lg:col-span-4">
+<div class="sticky top-12 space-y-xl">
+<section class="border border-outline-variant p-xl bg-surface-container-low">
+<h3 class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-lg flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="lab_profile">lab_profile</span>
+                        Specimen Data
+                    </h3>
+<div class="space-y-md">
+<div class="border-b border-outline-variant pb-xs">
+<span class="font-caption text-caption italic text-on-surface-variant block">Genus</span>
+<span class="font-body-md text-body-md">Dryopteris</span>
+</div>
+<div class="border-b border-outline-variant pb-xs">
+<span class="font-caption text-caption italic text-on-surface-variant block">Collection Date</span>
+<span class="font-body-md text-body-md">September 14, 1884</span>
+</div>
+<div class="border-b border-outline-variant pb-xs">
+<span class="font-caption text-caption italic text-on-surface-variant block">Location</span>
+<span class="font-body-md text-body-md">Glen Affric, Highlands</span>
+</div>
+<div class="border-b border-outline-variant pb-xs">
+<span class="font-caption text-caption italic text-on-surface-variant block">Altitude</span>
+<span class="font-body-md text-body-md">450 Meters A.S.L.</span>
+</div>
+<div class="border-b border-outline-variant pb-xs">
+<span class="font-caption text-caption italic text-on-surface-variant block">Condition</span>
+<span class="font-body-md text-body-md">Pristine, Mature Sori</span>
+</div>
+</div>
+</section>
+<section class="border border-outline-variant p-xl">
+<h3 class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-lg">Related Observations</h3>
+<ul class="space-y-md">
+<li class="group flex gap-md items-start cursor-pointer">
+<div class="w-12 h-12 bg-stone-200 flex-shrink-0 overflow-hidden border border-outline-variant">
+<img alt="Thumb" class="w-full h-full object-cover" data-alt="Microscopic view of plant cells on a slide, high contrast black and white scientific photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoLNTAyWmLWdkR8y9yE_m7lU-X2ISr78a4QLKxJ1I0lQsAEJFdnkBzuQdgPvBV_L9CBOOhDU-cqLfQ-nW45yU8YIIQikU8f2-y_ZE5QDBiHo3tWL6RDLFobHwbBUc_AIIjLoS0-Kpn32RGDnPNRLAu6kTptNT21sCRj4PWGSUeiml5zz1ujRTQZXQbmuaDg1e5a9kfYZ0ivxL5BNmeFtdA8H3jDs1BvATtGalsB21AT6oQJWZJPIRHMZl-JKD-rYGEbwV890K9sRo"/>
+</div>
+<div>
+<h4 class="font-body-md text-body-md leading-tight group-hover:text-primary transition-colors">Vascular systems in Mosses</h4>
+<span class="text-caption font-caption italic text-on-surface-variant">Aug 12, 1884</span>
+</div>
+</li>
+<li class="group flex gap-md items-start cursor-pointer">
+<div class="w-12 h-12 bg-stone-200 flex-shrink-0 overflow-hidden border border-outline-variant">
+<img alt="Thumb" class="w-full h-full object-cover" data-alt="Aerial topographic-like view of a mountain ridge at dawn, muted earthy tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk5kLqHKH7-WUgfryDu-6DxYAf_eIvRs-LWxeY0Tm-eUZ9-kYYRJ1jjT7UdL2Ck-XBw2b9moJKmZjx-LwYtUJbTaVIGPjNMFqFauSSqBPAmfcjoOJmJjsn8zq9nSRnlKfx4n_Rvz1IYWeiKSv_p7VKR5-SyBZfX2W2aVU_lebzT7u1RN8oCe-pfVqIqLPhuMvX45X0TRRVWn8Ece_XWgIx5aRL9o4ddf6ys_Ukh5I0ESP2aEJF7rWBAPzeDOgSX-LumeaSEp81Hv0"/>
+</div>
+<div>
+<h4 class="font-body-md text-body-md leading-tight group-hover:text-primary transition-colors">Soil Composition of Ridge B</h4>
+<span class="text-caption font-caption italic text-on-surface-variant">July 30, 1884</span>
+</div>
+</li>
+</ul>
+</section>
+<section class="border border-primary-container p-xl bg-primary-fixed">
+<p class="font-caption text-caption text-primary italic mb-md">This record is part of the Permanent Public Collection.</p>
+<a class="font-label-sm text-label-sm font-bold text-primary flex items-center gap-1 group" href="#">
+                        VIEW CATALOG INDEX 
+                        <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</section>
+</div>
+</aside>
+</main>
+<footer class="bg-stone-100 dark:bg-stone-900 w-full border-t border-stone-200 dark:border-stone-800 border-t-[1px] mt-xl">
+<div class="max-w-7xl mx-auto px-16 py-12 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col gap-2">
+<p class="font-serif text-xs uppercase tracking-widest leading-loose text-stone-500 dark:text-stone-400">© MDCCCLXXXIV Andrew McDonough. Curated for the public record.</p>
+</div>
+<nav class="flex gap-8">
+<a class="font-serif text-xs uppercase tracking-widest leading-loose text-stone-400 dark:text-stone-500 hover:underline decoration-stone-300 underline-offset-4 transition-opacity duration-500" href="#">The Archive</a>
+<a class="font-serif text-xs uppercase tracking-widest leading-loose text-stone-400 dark:text-stone-500 hover:underline decoration-stone-300 underline-offset-4 transition-opacity duration-500" href="#">Correspondence</a>
+<a class="font-serif text-xs uppercase tracking-widest leading-loose text-stone-400 dark:text-stone-500 hover:underline decoration-stone-300 underline-offset-4 transition-opacity duration-500" href="#">Index</a>
+<a class="font-serif text-xs uppercase tracking-widest leading-loose text-stone-400 dark:text-stone-500 hover:underline decoration-stone-300 underline-offset-4 transition-opacity duration-500" href="#">Legal Folio</a>
+</nav>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,19 @@
+<nav class="bg-stone-50 w-full border-b border-stone-200">
+  <div class="max-w-7xl mx-auto px-8 md:px-16 flex justify-between items-center h-20">
+    <a href="{{ "/" | relURL }}" class="font-serif italic text-2xl text-emerald-900 hover:opacity-80 transition-opacity duration-300">
+      {{ site.Title }}
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      {{- range site.Menus.main }}
+      {{- $active := $.IsMenuCurrent "main" . }}
+      <a href="{{ .URL | relURL }}"
+         class="{{ if $active }}text-emerald-900 border-b border-emerald-900 pb-0.5{{ else }}text-stone-500 hover:text-emerald-800{{ end }} font-serif tracking-tight transition-colors duration-300">
+        {{ .Name }}
+      </a>
+      {{- end }}
+    </div>
+    <div class="flex items-center gap-4">
+      <span class="material-symbols-outlined text-stone-500 cursor-pointer hover:text-stone-700">search</span>
+    </div>
+  </div>
+</nav>

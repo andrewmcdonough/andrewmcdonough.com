@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#d3e8d5",
+                    "surface-tint": "#506354",
+                    "on-surface-variant": "#434843",
+                    "tertiary-fixed-dim": "#cbc6b9",
+                    "tertiary-container": "#5b584d",
+                    "primary-container": "#4a5d4e",
+                    "error": "#ba1a1a",
+                    "on-surface": "#1b1c1b",
+                    "on-primary-fixed": "#0e1f13",
+                    "outline-variant": "#c3c8c1",
+                    "on-secondary": "#ffffff",
+                    "inverse-on-surface": "#f2f0ef",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#303030",
+                    "primary-fixed-dim": "#b7ccb9",
+                    "on-background": "#1b1c1b",
+                    "on-primary-fixed-variant": "#394b3d",
+                    "on-primary-container": "#c0d5c2",
+                    "on-error": "#ffffff",
+                    "surface-dim": "#dbdad9",
+                    "surface-container": "#efedec",
+                    "secondary-fixed-dim": "#bccbb5",
+                    "tertiary": "#434137",
+                    "secondary-fixed": "#d8e7d0",
+                    "primary": "#334537",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#e9e8e7",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#e4e2e1",
+                    "secondary": "#556250",
+                    "on-secondary-container": "#5b6856",
+                    "error-container": "#ffdad6",
+                    "outline": "#737872",
+                    "background": "#fbf9f8",
+                    "on-primary": "#ffffff",
+                    "surface-container-low": "#f5f3f2",
+                    "surface-container-highest": "#e4e2e1",
+                    "on-secondary-fixed": "#131e11",
+                    "secondary-container": "#d8e7d0",
+                    "surface-bright": "#fbf9f8",
+                    "on-tertiary-fixed": "#1d1c13",
+                    "on-tertiary-container": "#d3cfc1",
+                    "inverse-primary": "#b7ccb9",
+                    "on-secondary-fixed-variant": "#3d4a3a",
+                    "surface": "#fbf9f8",
+                    "tertiary-fixed": "#e7e2d4",
+                    "on-tertiary-fixed-variant": "#49473c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "lg": "24px",
+                    "xl": "48px",
+                    "unit": "4px",
+                    "margin": "64px",
+                    "xs": "4px",
+                    "md": "16px",
+                    "sm": "8px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "caption": ["Noto Serif"],
+                    "label-sm": ["Noto Serif"],
+                    "body-md": ["Noto Serif"],
+                    "body-lg": ["Noto Serif"],
+                    "headline-md": ["Noto Serif"],
+                    "headline-xl": ["Noto Serif"],
+                    "headline-lg": ["Noto Serif"]
+            },
+            "fontSize": {
+                    "caption": ["14px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-xl": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .small-caps {
+            font-variant: small-caps;
+        }
+        .paper-stack {
+            box-shadow: 0 1px 0 0 #dcd7c9, 4px 4px 0 0 #f5f3f2, 5px 5px 0 0 #dcd7c9;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="bg-stone-50 dark:bg-stone-950 w-full border-b border-stone-200 dark:border-stone-800 border-b-[1px] flat no shadows">
+<div class="max-w-7xl mx-auto px-16 flex justify-between items-center h-24">
+<div class="font-serif italic text-2xl text-emerald-900 dark:text-emerald-500">
+                Andrew McDonough
+            </div>
+<div class="hidden md:flex items-center space-x-8 font-serif tracking-tight text-stone-900 dark:text-stone-100">
+<a class="text-stone-500 dark:text-stone-400 font-medium hover:text-emerald-800 dark:hover:text-emerald-300 transition-colors duration-300 scale-100 opacity-100 hover:opacity-80" href="#">Archive</a>
+<a class="text-stone-500 dark:text-stone-400 font-medium hover:text-emerald-800 dark:hover:text-emerald-300 transition-colors duration-300 scale-100 opacity-100 hover:opacity-80" href="#">Observations</a>
+<a class="text-stone-500 dark:text-stone-400 font-medium hover:text-emerald-800 dark:hover:text-emerald-300 transition-colors duration-300 scale-100 opacity-100 hover:opacity-80" href="#">Specimens</a>
+<a class="text-stone-500 dark:text-stone-400 font-medium hover:text-emerald-800 dark:hover:text-emerald-300 transition-colors duration-300 scale-100 opacity-100 hover:opacity-80" href="#">Library</a>
+<a class="text-stone-500 dark:text-stone-400 font-medium hover:text-emerald-800 dark:hover:text-emerald-300 transition-colors duration-300 scale-100 opacity-100 hover:opacity-80" href="#">About</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-stone-500">search</span>
+<span class="material-symbols-outlined text-stone-500">menu</span>
+</div>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-16 py-xl">
+<!-- Hero Section -->
+<section class="grid grid-cols-12 gap-gutter items-center mb-xl">
+<div class="col-span-12 lg:col-span-7 flex flex-col gap-md">
+<span class="font-label-sm text-label-sm text-secondary small-caps tracking-[0.2em]">Founded MDCCCLXXXIV</span>
+<h1 class="font-headline-xl text-headline-xl text-primary max-w-xl">
+                    An Inventory of the Natural World and Its Quiet Curiosities.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                    Dedicated to the meticulous study of flora, fauna, and the fleeting moments of the wild. A digital repository of observations curated for the scholarly and the curious.
+                </p>
+<div class="mt-md flex gap-md">
+<button class="px-lg py-sm border border-primary bg-primary text-on-primary font-label-sm uppercase tracking-widest hover:bg-surface-tint transition-colors">
+                        Enter Archive
+                    </button>
+<button class="px-lg py-sm border border-primary text-primary font-label-sm uppercase tracking-widest hover:bg-primary-fixed transition-colors">
+                        Latest Study
+                    </button>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-5 relative">
+<div class="border border-outline-variant p-4 bg-white/50 backdrop-blur-sm relative">
+<img alt="Botanical Illustration" class="w-full h-auto grayscale-[0.2] sepia-[0.1]" data-alt="A detailed, vintage-style scientific illustration of a lush fern branch with intricate spores against a textured off-white parchment background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSNGxkSogke8JcnCcsTXRpe2RnfnUHrKEEcb60U-lpI3jxItCV3JotYzadGU3PJMBzjxmxV_Zk_TfKEt3CAqWv6BM_6HmPx0xBF9O8tUWu2dGPIX1ZJ-in8z9b1W5EQrjdiDzm7TMhc1Z8RuuGAsOYKQUj5aswyrjZ_Q6Ju6zwonXnJ0zHel6Nc16FrbQT8MmQj0_ic-2dAu_J60b4qpgUKAF9fjbfPXZkGoq2PzVTOAEEnriTaKm1WG1d0i-_8wFXENYjhG2YN7s"/>
+<div class="mt-4 border-t border-outline-variant pt-2">
+<p class="font-caption text-caption text-stone-500 italic text-center">Fig. I — Pteridophyta; Study of the common woodland fern, observed June 1884.</p>
+</div>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -z-10 -top-6 -right-6 w-full h-full border border-tertiary-fixed-dim"></div>
+</div>
+</section>
+<!-- Observations & Journals -->
+<section class="mt-xl">
+<div class="flex justify-between items-end border-b border-primary pb-sm mb-lg">
+<h2 class="font-headline-lg text-headline-lg text-primary">Observations &amp; Journals</h2>
+<a class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-1 hover:underline" href="#">View All Entries</a>
+</div>
+<div class="space-y-0">
+<!-- Entry 1 -->
+<article class="group py-lg border-b border-outline-variant flex flex-col md:flex-row md:items-baseline gap-gutter hover:bg-surface-container-low transition-colors px-4 -mx-4">
+<span class="font-label-sm text-label-sm text-stone-400 md:w-32 small-caps">Oct. 12, 1884</span>
+<div class="flex-1">
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+                            The Migratory Patterns of the Northern Starling
+                        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-sm max-w-2xl">
+                            A focused study on the collective behavior of starlings during the autumnal transition. Notes on murmurations and environmental triggers.
+                        </p>
+</div>
+<div class="flex gap-sm mt-md md:mt-0">
+<span class="bg-secondary-container text-on-secondary-fixed px-sm py-xs text-[10px] uppercase font-bold tracking-tighter">Fauna</span>
+<span class="bg-secondary-container text-on-secondary-fixed px-sm py-xs text-[10px] uppercase font-bold tracking-tighter">Observation</span>
+</div>
+</article>
+<!-- Entry 2 -->
+<article class="group py-lg border-b border-outline-variant flex flex-col md:flex-row md:items-baseline gap-gutter hover:bg-surface-container-low transition-colors px-4 -mx-4">
+<span class="font-label-sm text-label-sm text-stone-400 md:w-32 small-caps">Sept. 28, 1884</span>
+<div class="flex-1">
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+                            Classification of Mosses in the Eastern Highlands
+                        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-sm max-w-2xl">
+                            Examining the microscopic structures of Bryophyta found within the limestone crevices of the high ridges.
+                        </p>
+</div>
+<div class="flex gap-sm mt-md md:mt-0">
+<span class="bg-secondary-container text-on-secondary-fixed px-sm py-xs text-[10px] uppercase font-bold tracking-tighter">Flora</span>
+<span class="bg-secondary-container text-on-secondary-fixed px-sm py-xs text-[10px] uppercase font-bold tracking-tighter">Taxonomy</span>
+</div>
+</article>
+<!-- Entry 3 -->
+<article class="group py-lg border-b border-outline-variant flex flex-col md:flex-row md:items-baseline gap-gutter hover:bg-surface-container-low transition-colors px-4 -mx-4">
+<span class="font-label-sm text-label-sm text-stone-400 md:w-32 small-caps">Aug. 04, 1884</span>
+<div class="flex-1">
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+                            The Silent Decay: Fungal Successions on Fallen Timber
+                        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-sm max-w-2xl">
+                            A photographic essay on the parasitic and saprophytic fungi that govern the forest floor's lifecycle.
+                        </p>
+</div>
+<div class="flex gap-sm mt-md md:mt-0">
+<span class="bg-secondary-container text-on-secondary-fixed px-sm py-xs text-[10px] uppercase font-bold tracking-tighter">Mycology</span>
+<span class="bg-secondary-container text-on-secondary-fixed px-sm py-xs text-[10px] uppercase font-bold tracking-tighter">Essays</span>
+</div>
+</article>
+</div>
+</section>
+<!-- Specimens Bento Grid -->
+<section class="mt-xl grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="md:col-span-1 border border-outline-variant p-md flex flex-col gap-sm bg-surface-container-lowest">
+<div class="aspect-square border border-outline-variant overflow-hidden">
+<img alt="Specimen A" class="w-full h-full object-cover" data-alt="A single dried pressed flower, possibly a wildflower, on a clean white mounting board with handwritten scientific notes in the corner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqVlDGC7oJ3R1JS75rNJZQMo8GaGmuKIuF1fzwjfhjdBlij5vCJatiQ-PrnLmenPXs4uMHxfOiiSNY7labC_gj1m3oqbcDnRH9wFto4juDmWyo9iSUIK5YfDKAsCmX96S8FAH71B-3JI2AAEiO33Zqy2MrQ3uHq19CFL3TBbwLZe_xB9FIlfeV1ndiEzeWHGC4AoP3GGfWeQIwEwxckqly5vHdxb8q5eM-S7qfUvPLPrMkXrSLlTmM6B8WbENCNT19Na8SNq7rv8A"/>
+</div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest text-center">Collection: Alpine Flora</span>
+</div>
+<div class="md:col-span-1 border border-outline-variant p-md flex flex-col gap-sm bg-surface-container-lowest">
+<div class="aspect-square border border-outline-variant overflow-hidden">
+<img alt="Field Tools" class="w-full h-full object-cover" data-alt="Close-up of a vintage brass telescope and weathered leather notebook on a dark wood desk with dramatic study lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQRxEfRPtI1a43QrvazX3iiu-ns40e0ZYgcvSgi7DRp3gQ-BSJ11nuSjQL3vWZh0OzGodY8BnSJD5LVgQZhf5cq4pK5pmYXrXwZKsTMC2r0IVjF0eEM4PU_bEmGfagcdacbLy8J7-87x2WE7-eNCL_2PlXxwVRRmgQGxNF4G1dfDC_nWCHkxiEAvqTmO9nEjPFSk9nSpaEffBxX56jiKcdMLVMqCz_yJLFRKpniMScPgXb0tMoPJvLzKax1lLU77a1bvIyqVtet7o"/>
+</div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest text-center">The Field Library</span>
+</div>
+<div class="md:col-span-1 border border-outline-variant p-md flex flex-col gap-sm bg-surface-container-lowest">
+<div class="aspect-square border border-outline-variant overflow-hidden">
+<img alt="Entomology" class="w-full h-full object-cover" data-alt="Detailed close-up of a preserved butterfly specimen in a wooden drawer with a handwritten small paper tag" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe99n3ZR9DBsVksqAMi47uRPtAA_cVmdJJSuYBu24G1a25xKJRVsvMbS0n9ZR-fK8F8iM5OdmED4HGNkefrb_CGNgCE4G7B2zBRX2MDnptLcyK2fPRUvfSq9Q-uTE2N7XVN0PemuK3wdKWeipGv2M-Pt0MXN2mfJgGqjy4i6oxd79AdSU95KZ-b6Z6f74PIlkKEf_y94hq4jb90vYuwuirD46gOe9dnZyiEP-8kQrUKaK00pTiRDkjyWO41U3BBSu4_trlnZ2oGvw"/>
+</div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest text-center">Inventory: Entomology</span>
+</div>
+</section>
+<!-- Newsletter / Dispatch -->
+<section class="mt-xl mb-xl border border-tertiary-fixed p-xl flex flex-col items-center text-center gap-md bg-white">
+<span class="material-symbols-outlined text-primary text-4xl">mail</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">The Weekly Dispatch</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md italic">
+                A digest of latest observations, rare specimen alerts, and archival updates delivered to your correspondence box.
+            </p>
+<div class="w-full max-w-sm mt-md">
+<div class="flex flex-col gap-xs">
+<label class="font-label-sm text-label-sm text-stone-500 italic text-left ml-1">E-mail Address</label>
+<div class="flex border-b border-primary pb-xs">
+<input class="bg-transparent border-none focus:ring-0 w-full font-serif text-body-md placeholder:text-stone-300" placeholder="correspondence@domain.com" type="email"/>
+<button class="font-label-sm text-primary uppercase font-bold hover:text-surface-tint">Subscribe</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 w-full border-t border-stone-200 dark:border-stone-800 border-t-[1px] flat no shadows">
+<div class="max-w-7xl mx-auto px-16 py-12 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="font-serif text-xs uppercase tracking-widest leading-loose text-stone-500 dark:text-stone-400 text-center md:text-left">
+                © MDCCCLXXXIV Andrew McDonough. <br/> Curated for the public record.
+            </div>
+<div class="flex gap-8 font-serif text-xs uppercase tracking-widest leading-loose">
+<a class="text-stone-400 dark:text-stone-500 hover:underline decoration-stone-300 underline-offset-4 fade-in transition-opacity duration-500" href="#">The Archive</a>
+<a class="text-stone-400 dark:text-stone-500 hover:underline decoration-stone-300 underline-offset-4 fade-in transition-opacity duration-500" href="#">Correspondence</a>
+<a class="text-stone-400 dark:text-stone-500 hover:underline decoration-stone-300 underline-offset-4 fade-in transition-opacity duration-500" href="#">Index</a>
+<a class="text-stone-400 dark:text-stone-500 hover:underline decoration-stone-300 underline-offset-4 fade-in transition-opacity duration-500" href="#">Legal Folio</a>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-stone-400">eco</span>
+<span class="material-symbols-outlined text-stone-400">history_edu</span>
+</div>
+</div>
+</footer>
+</body></html>

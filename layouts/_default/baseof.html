@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language }}" class="light">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
+  {{- with site.Params.description }}<meta name="description" content="{{ . }}"/>{{- end }}
+  <link rel="canonical" href="{{ .Permalink }}"/>
+  {{- with .OutputFormats.Get "rss" }}
+  <link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ site.Title }}"/>
+  {{- end }}
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed": "#d3e8d5",
+            "surface-tint": "#506354",
+            "on-surface-variant": "#434843",
+            "tertiary-fixed-dim": "#cbc6b9",
+            "tertiary-container": "#5b584d",
+            "primary-container": "#4a5d4e",
+            "error": "#ba1a1a",
+            "on-surface": "#1b1c1b",
+            "on-primary-fixed": "#0e1f13",
+            "outline-variant": "#c3c8c1",
+            "on-secondary": "#ffffff",
+            "inverse-on-surface": "#f2f0ef",
+            "on-error-container": "#93000a",
+            "inverse-surface": "#303030",
+            "primary-fixed-dim": "#b7ccb9",
+            "on-background": "#1b1c1b",
+            "on-primary-fixed-variant": "#394b3d",
+            "on-primary-container": "#c0d5c2",
+            "on-error": "#ffffff",
+            "surface-dim": "#dbdad9",
+            "surface-container": "#efedec",
+            "secondary-fixed-dim": "#bccbb5",
+            "tertiary": "#434137",
+            "secondary-fixed": "#d8e7d0",
+            "primary": "#334537",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-high": "#e9e8e7",
+            "on-tertiary": "#ffffff",
+            "surface-variant": "#e4e2e1",
+            "secondary": "#556250",
+            "on-secondary-container": "#5b6856",
+            "error-container": "#ffdad6",
+            "outline": "#737872",
+            "background": "#fbf9f8",
+            "on-primary": "#ffffff",
+            "surface-container-low": "#f5f3f2",
+            "surface-container-highest": "#e4e2e1",
+            "on-secondary-fixed": "#131e11",
+            "secondary-container": "#d8e7d0",
+            "surface-bright": "#fbf9f8",
+            "on-tertiary-fixed": "#1d1c13",
+            "on-tertiary-container": "#d3cfc1",
+            "inverse-primary": "#b7ccb9",
+            "on-secondary-fixed-variant": "#3d4a3a",
+            "surface": "#fbf9f8",
+            "tertiary-fixed": "#e7e2d4",
+            "on-tertiary-fixed-variant": "#49473c"
+          },
+          borderRadius: {
+            "DEFAULT": "0",
+            "full": "9999px"
+          },
+          spacing: {
+            "xl": "48px",
+            "lg": "24px",
+            "md": "16px",
+            "sm": "8px",
+            "xs": "4px",
+            "gutter": "24px",
+            "margin": "64px"
+          },
+          fontFamily: {
+            "serif": ["Noto Serif", "serif"]
+          },
+          fontSize: {
+            "headline-xl": ["40px", { lineHeight: "1.2", fontWeight: "700", letterSpacing: "-0.02em" }],
+            "headline-lg": ["32px", { lineHeight: "1.3", fontWeight: "600" }],
+            "headline-md": ["24px", { lineHeight: "1.4", fontWeight: "600" }],
+            "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+            "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+            "label-sm": ["12px", { lineHeight: "1.2", letterSpacing: "0.05em", fontWeight: "600" }],
+            "caption": ["14px", { lineHeight: "1.4", fontWeight: "400" }]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Noto Serif', serif; }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
+    }
+    .botanical-rule {
+      height: 1px;
+      background-color: #c3c8c1;
+      width: 100%;
+      margin: 24px 0;
+    }
+    .specimen-label {
+      background-color: #d3e8d5;
+      padding: 2px 8px;
+      font-family: 'Noto Serif', serif;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border: 1px solid #c3c8c1;
+      display: inline-block;
+    }
+    .post-content h1, .post-content h2, .post-content h3,
+    .post-content h4, .post-content h5, .post-content h6 {
+      font-family: 'Noto Serif', serif;
+      font-weight: 600;
+      margin-top: 2em;
+      margin-bottom: 0.5em;
+      color: #1b1c1b;
+    }
+    .post-content h2 { font-size: 24px; line-height: 1.4; }
+    .post-content h3 { font-size: 20px; line-height: 1.4; }
+    .post-content p { margin-bottom: 1.25em; }
+    .post-content a { color: #334537; text-decoration: underline; text-underline-offset: 2px; }
+    .post-content a:hover { color: #506354; }
+    .post-content ul { list-style: none; padding-left: 1.5em; margin-bottom: 1.25em; }
+    .post-content ul li::before { content: "— "; color: #556250; }
+    .post-content ol { list-style: decimal; padding-left: 1.5em; margin-bottom: 1.25em; }
+    .post-content ol li { margin-bottom: 0.5em; }
+    .post-content blockquote {
+      border-left: 2px solid #334537;
+      padding-left: 24px;
+      margin: 32px 0;
+      font-style: italic;
+      color: #434843;
+    }
+    .post-content pre {
+      background-color: #efedec;
+      border: 1px solid #c3c8c1;
+      padding: 16px;
+      overflow-x: auto;
+      margin-bottom: 1.25em;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .post-content code {
+      font-family: ui-monospace, 'Fira Code', monospace;
+      background-color: #e9e8e7;
+      padding: 1px 4px;
+      font-size: 0.875em;
+    }
+    .post-content pre code {
+      background: none;
+      padding: 0;
+    }
+    .post-content img {
+      border: 1px solid #c3c8c1;
+      max-width: 100%;
+    }
+    .post-content figure { margin: 2em 0; }
+    .post-content figcaption {
+      font-size: 14px;
+      font-style: italic;
+      color: #434843;
+      text-align: center;
+      margin-top: 8px;
+    }
+    .post-content hr { border: none; border-top: 1px solid #c3c8c1; margin: 32px 0; }
+    .post-content table { width: 100%; border-collapse: collapse; margin-bottom: 1.25em; }
+    .post-content th, .post-content td { border: 1px solid #c3c8c1; padding: 8px 12px; }
+    .post-content th { background: #efedec; font-weight: 600; }
+    /* Chroma syntax highlight override — monochrome */
+    .chroma { background: #efedec !important; color: #1b1c1b !important; }
+    .chroma .err { color: #ba1a1a; }
+    .chroma .k, .chroma .kd, .chroma .kn, .chroma .kp, .chroma .kr, .chroma .kt { font-weight: 700; }
+    .chroma .c, .chroma .ch, .chroma .cm, .chroma .c1, .chroma .cs { color: #737872; font-style: italic; }
+    .chroma .s, .chroma .sa, .chroma .sb, .chroma .sc, .chroma .dl, .chroma .sd,
+    .chroma .s2, .chroma .se, .chroma .sh, .chroma .si, .chroma .sx, .chroma .sr,
+    .chroma .s1, .chroma .ss { color: #434137; }
+  </style>
+  {{- block "head" . }}{{ end }}
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GKLTCTS978"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GKLTCTS978');
+  </script>
+</head>
+<body class="bg-background text-on-background" style="font-family: 'Noto Serif', serif;">
+  {{- partial "header.html" . }}
+  <main class="max-w-7xl mx-auto px-8 md:px-16 py-xl">
+    {{- block "main" . }}{{ end }}
+  </main>
+  {{- partial "footer.html" . }}
+</body>
+</html>

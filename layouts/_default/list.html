@@ -1,121 +1,144 @@
 {{- define "main" }}
 
-{{- if (and site.Params.profileMode.enabled .IsHome) }}
-{{- partial "index_profile.html" . }}
-{{- else }} {{/* if not profileMode */}}
+{{- if .IsHome }}
 
-{{- if not .IsHome | and .Title }}
-<header class="page-header">
-  {{- partial "breadcrumbs.html" . }}
-  <h1>
-    {{ .Title }}
-    {{- if and (or (eq .Kind `term`) (eq .Kind `section`)) (.Param "ShowRssButtonInSectionTermList") }}
-    {{- with .OutputFormats.Get "rss" }}
-    <a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" height="23">
-        <path d="M4 11a9 9 0 0 1 9 9" />
-        <path d="M4 4a16 16 0 0 1 16 16" />
-        <circle cx="5" cy="19" r="1" />
-      </svg>
-    </a>
-    {{- end }}
-    {{- end }}
-  </h1>
-  {{- if .Description }}
-  <div class="post-description">
-    {{ .Description | markdownify }}
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- $pages = where $pages "Params.homepage" "==" true }}
+
+<!-- Hero Section -->
+<section class="grid grid-cols-12 gap-gutter items-center mb-xl">
+  <div class="col-span-12 lg:col-span-7 flex flex-col gap-md">
+    <h1 class="text-headline-xl text-primary max-w-xl" style="font-size:40px;line-height:1.2;font-weight:700;letter-spacing:-0.02em;color:#334537;">
+      {{ site.Params.heroTitle | default "Writing on Software, Technology, and Building Things." }}
+    </h1>
+    <p style="font-size:18px;line-height:1.6;color:#434843;" class="max-w-lg">
+      {{ site.Params.heroSubtitle | default "Observations from a CTO based in Berlin — on engineering, leadership, and the craft of making software." }}
+    </p>
+    <div class="mt-md flex gap-md flex-wrap">
+      <a href="/posts/" class="px-lg py-sm border border-primary bg-primary text-on-primary font-serif text-xs uppercase tracking-widest hover:opacity-90 transition-opacity" style="background:#334537;color:#fff;border-color:#334537;">
+        Read the Archive
+      </a>
+      <a href="/talks/" class="px-lg py-sm border border-primary text-primary font-serif text-xs uppercase tracking-widest hover:bg-primary-fixed transition-colors" style="border-color:#334537;color:#334537;">
+        View Talks
+      </a>
+    </div>
   </div>
+  <div class="col-span-12 lg:col-span-5 relative">
+    <div class="border border-outline-variant p-4 bg-white relative" style="border-color:#c3c8c1;">
+      <img src="/images/portrait.png" alt="{{ site.Params.author }}" class="w-full h-auto" style="display:block;"/>
+      <div class="mt-4 border-t border-outline-variant pt-2" style="border-color:#c3c8c1;">
+        <p class="font-serif text-caption italic text-center text-stone-500" style="font-size:14px;font-style:italic;text-align:center;color:#737872;">
+          {{ site.Params.author }}
+        </p>
+      </div>
+    </div>
+    <div class="absolute -z-10 -top-3 -right-3 w-full h-full border border-tertiary-fixed-dim" style="border-color:#cbc6b9;"></div>
+  </div>
+</section>
+
+<!-- Observations & Journals -->
+<section class="mt-xl">
+  <div class="flex justify-between items-end border-b pb-sm mb-lg" style="border-color:#334537;border-bottom-width:1px;">
+    <h2 style="font-size:32px;line-height:1.3;font-weight:600;color:#334537;">Observations &amp; Journals</h2>
+    <a href="/posts/" class="font-serif text-xs uppercase tracking-widest text-secondary hover:underline mb-1" style="color:#556250;font-size:12px;letter-spacing:0.1em;">
+      View All Entries
+    </a>
+  </div>
+
+  <div>
+    {{- range $pages }}
+    <article class="group py-lg border-b flex flex-col md:flex-row md:items-baseline gap-gutter px-4 -mx-4 hover:bg-surface-container-low transition-colors" style="border-color:#c3c8c1;">
+      <span class="font-serif text-xs uppercase tracking-wide text-stone-400 md:w-36 flex-shrink-0" style="font-size:12px;letter-spacing:0.05em;color:#9ca3af;">
+        {{ .Date.Format "Jan. 02, 2006" }}
+      </span>
+      <div class="flex-1">
+        <h3 class="font-serif group-hover:text-primary transition-colors" style="font-size:24px;line-height:1.4;font-weight:600;color:#1b1c1b;">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h3>
+        {{- if .Summary }}
+        <p class="mt-sm max-w-2xl" style="font-size:16px;line-height:1.6;color:#434843;margin-top:8px;">
+          {{ .Summary | plainify | truncate 180 }}
+        </p>
+        {{- end }}
+      </div>
+      {{- $tags := .GetTerms "tags" }}
+      {{- if $tags }}
+      <div class="flex gap-sm flex-wrap mt-md md:mt-0 flex-shrink-0">
+        {{- range first 2 $tags }}
+        <span class="px-sm py-xs font-serif text-xs uppercase font-bold tracking-tighter" style="background:#d8e7d0;color:#131e11;font-size:10px;padding:2px 8px;">
+          {{ .LinkTitle }}
+        </span>
+        {{- end }}
+      </div>
+      {{- end }}
+    </article>
+    {{- end }}
+  </div>
+</section>
+
+<!-- Newsletter / Dispatch -->
+<section class="mt-xl mb-xl border p-xl flex flex-col items-center text-center gap-md bg-white" style="border-color:#e7e2d4;">
+  <span class="material-symbols-outlined text-primary text-4xl" style="color:#334537;font-size:36px;">mail</span>
+  <h2 style="font-size:32px;line-height:1.3;font-weight:600;color:#334537;">The Dispatch</h2>
+  <p class="font-serif max-w-md italic" style="font-size:16px;line-height:1.6;color:#434843;font-style:italic;">
+    A digest of new posts on engineering, leadership, and software craft — delivered when there is something worth reading.
+  </p>
+  <div class="w-full max-w-sm mt-md">
+    <div class="flex flex-col gap-xs">
+      <label class="font-serif text-xs italic text-left ml-1" style="color:#737872;font-style:italic;">E-mail Address</label>
+      <div class="flex border-b pb-xs" style="border-color:#334537;">
+        <input type="email" placeholder="your@email.com"
+               class="bg-transparent border-none focus:ring-0 w-full font-serif placeholder-stone-300"
+               style="background:transparent;border:none;outline:none;font-family:'Noto Serif',serif;font-size:16px;"/>
+        <button class="font-serif text-xs font-bold uppercase hover:opacity-70 transition-opacity" style="color:#334537;font-size:12px;letter-spacing:0.05em;">
+          Subscribe
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{- else }}
+
+<!-- Section / Taxonomy listing -->
+<header class="mb-xl border-b pb-sm" style="border-color:#334537;">
+  <h1 style="font-size:32px;line-height:1.3;font-weight:600;color:#334537;">{{ .Title }}</h1>
+  {{- if .Description }}
+  <p class="mt-sm" style="font-size:16px;line-height:1.6;color:#434843;">{{ .Description }}</p>
   {{- end }}
 </header>
-{{- end }}
 
-{{- if .Content }}
-<div class="md-content">
-  {{- if not (.Param "disableAnchoredHeadings") }}
-  {{- partial "anchored_headings.html" .Content -}}
-  {{- else }}{{ .Content }}{{ end }}
-</div>
-{{- end }}
-
-{{- $pages := union .RegularPages .Sections }}
-
-{{- if .IsHome }}
-{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
-{{- $pages = where $pages "Params.homepage" "==" true }}
-{{- end }}
-
-{{- $paginator := .Paginate $pages }}
-
-{{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
-{{- partial "home_info.html" . }}
-{{- end }}
-
-{{- $term := .Data.Term }}
-{{- range $index, $page := $paginator.Pages }}
-
-{{- $class := "post-entry" }}
-
-{{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
-{{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
-{{- $class = "first-entry" }}
-{{- else if $term }}
-{{- $class = "post-entry tag-entry" }}
-{{- end }}
-
-<article class="{{ $class }}">
-  {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
-  {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">
-      {{- .Title }}
-      {{- if .Draft }}
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
+<div>
+  {{- $pages := union .RegularPages .Sections }}
+  {{- range $pages }}
+  <article class="group py-lg border-b flex flex-col md:flex-row md:items-baseline gap-gutter px-4 -mx-4 hover:bg-surface-container-low transition-colors" style="border-color:#c3c8c1;">
+    <span class="font-serif text-xs uppercase tracking-wide text-stone-400 md:w-36 flex-shrink-0" style="font-size:12px;letter-spacing:0.05em;color:#9ca3af;">
+      {{ .Date.Format "Jan. 02, 2006" }}
+    </span>
+    <div class="flex-1">
+      <h3 class="font-serif group-hover:text-primary transition-colors" style="font-size:24px;line-height:1.4;font-weight:600;color:#1b1c1b;">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h3>
+      {{- if .Summary }}
+      <p class="mt-sm max-w-2xl" style="font-size:16px;line-height:1.6;color:#434843;margin-top:8px;">
+        {{ .Summary | plainify | truncate 180 }}
+      </p>
+      {{- end }}
+    </div>
+    {{- $tags := .GetTerms "tags" }}
+    {{- if $tags }}
+    <div class="flex gap-sm flex-wrap mt-md md:mt-0 flex-shrink-0">
+      {{- range first 2 $tags }}
+      <span class="px-sm py-xs font-serif text-xs uppercase font-bold tracking-tighter" style="background:#d8e7d0;color:#131e11;font-size:10px;padding:2px 8px;">
+        {{ .LinkTitle }}
       </span>
       {{- end }}
-    </h2>
-  </header>
-  {{- if (ne (.Param "hideSummary") true) }}
-  <div class="entry-content">
-    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-  </div>
+    </div>
+    {{- end }}
+  </article>
   {{- end }}
-  {{- if not (.Param "hideMeta") }}
-  <footer class="entry-footer">
-    {{- partial "post_meta.html" . -}}
-  </footer>
-  {{- end }}
-  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .RelPermalink }}"></a>
-</article>
+</div>
+
 {{- end }}
 
-{{- if gt $paginator.TotalPages 1 }}
-<footer class="page-footer">
-  <nav class="pagination">
-    {{- if $paginator.HasPrev }}
-    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
-      «&nbsp;{{ i18n "prev_page" }}&nbsp;
-      {{- if (.Param "ShowPageNums") }}
-      {{- sub $paginator.PageNumber 1 }}/{{ $paginator.TotalPages }}
-      {{- end }}
-    </a>
-    {{- end }}
-    {{- if $paginator.HasNext }}
-    <a class="next" href="{{ $paginator.Next.URL | absURL }}">
-      {{- i18n "next_page" }}&nbsp;
-      {{- if (.Param "ShowPageNums") }}
-      {{- add 1 $paginator.PageNumber }}/{{ $paginator.TotalPages }}
-      {{- end }}&nbsp;»
-    </a>
-    {{- end }}
-  </nav>
-</footer>
 {{- end }}
-
-{{- end }}{{/* end profileMode */}}
-
-{{- end }}{{- /* end main */ -}}

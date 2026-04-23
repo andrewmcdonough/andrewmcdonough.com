@@ -1,6 +1,5 @@
 baseURL = "https://www.andrewmcdonough.com"
 title = "Andrew McDonough"
-theme = "PaperMod"
 languageCode = "en-us"
 paginate = 10
 enableRobotsTXT = true
@@ -12,31 +11,25 @@ enableRobotsTXT = true
   author = "Andrew McDonough"
   mainSections = ["posts", "talks"]
   description = "Andrew McDonough's Personal Website"
-  ShowReadingTime = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
+  heroTitle = "Writing on Software, Technology, and Building Things."
+  heroSubtitle = "Observations from a CTO based in Berlin — on engineering, leadership, and the craft of making software."
 
-[[params.socialIcons]]
-  name = "twitter"
-  url = "https://twitter.com/andrewmcdonough"
+[[menu.main]]
+  name = "Archive"
+  url = "/posts/"
+  weight = 10
 
-[[params.socialIcons]]
-  name = "linkedin"
-  url = "https://www.linkedin.com/in/andrewmcdonough"
-
-[[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/andrewmcdonough"
-
-[params.homeInfoParams]
-  Title = "Hi, I'm Andrew"
-  Content = "I'm currently based in Berlin and working as CTO of CaptionHub."
+[[menu.main]]
+  name = "Talks"
+  url = "/talks/"
+  weight = 20
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
 
 [markup.highlight]
-  style = "monokai"
+  style = "monochrome"
+  noClasses = true
 
 [markup.goldmark.renderer]
   unsafe = true

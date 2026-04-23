@@ -1,0 +1,184 @@
+{{- define "main" }}
+
+{{- $related := first 3 (where (.Site.RegularPages.Related .) "Permalink" "!=" .Permalink) }}
+
+<div class="grid grid-cols-12 gap-gutter">
+
+  <!-- Main Article -->
+  <article class="col-span-12 lg:col-span-8 flex flex-col">
+
+    <header class="mb-xl">
+      <!-- Breadcrumb -->
+      <nav class="mb-md flex items-center gap-2 flex-wrap">
+        <span class="specimen-label">{{ .Type | title }}</span>
+        {{- range .GetTerms "tags" }}
+        <a href="{{ .Permalink }}" class="font-serif italic text-stone-400 hover:text-stone-600" style="font-size:14px;">
+          {{ .LinkTitle }}
+        </a>
+        {{- end }}
+      </nav>
+
+      <h1 style="font-size:40px;line-height:1.2;font-weight:700;letter-spacing:-0.02em;color:#1b1c1b;margin-bottom:16px;">
+        {{ .Title }}
+      </h1>
+
+      {{- if .Description }}
+      <p class="font-serif italic max-w-2xl" style="font-size:18px;line-height:1.6;color:#434843;font-style:italic;">
+        {{ .Description }}
+      </p>
+      {{- end }}
+
+      <!-- Metadata bar -->
+      <div class="flex items-center gap-lg flex-wrap mt-lg pt-lg border-t" style="border-color:#c3c8c1;">
+        <span class="font-serif text-xs uppercase tracking-widest" style="color:#434843;letter-spacing:0.05em;">
+          {{ .Date.Format "Jan 2, 2006" }}
+        </span>
+        {{- if .ReadingTime }}
+        <span class="font-serif text-xs uppercase tracking-widest" style="color:#434843;letter-spacing:0.05em;">
+          {{ .ReadingTime }} min read
+        </span>
+        {{- end }}
+        {{- with .Params.author | default site.Params.author }}
+        <span class="font-serif text-xs uppercase tracking-widest" style="color:#434843;letter-spacing:0.05em;">
+          {{ . }}
+        </span>
+        {{- end }}
+      </div>
+    </header>
+
+    <!-- Cover image -->
+    {{- with .Params.cover }}{{- with .image }}
+    <section class="mb-xl">
+      <figure class="relative border p-sm" style="border-color:#c3c8c1;background:#fff;">
+        <div class="overflow-hidden border" style="border-color:#c3c8c1;">
+          <img src="{{ . }}" alt="{{ $.Params.cover.alt | default $.Title }}"
+               class="w-full h-auto" style="display:block;"/>
+        </div>
+        {{- with $.Params.cover.caption }}
+        <figcaption class="mt-md px-md pb-md">
+          <p class="font-serif text-caption italic text-center" style="font-size:14px;font-style:italic;color:#434843;">{{ . }}</p>
+        </figcaption>
+        {{- end }}
+      </figure>
+    </section>
+    {{- end }}{{- end }}
+
+    <!-- Body -->
+    <div class="post-content space-y-4" style="font-size:18px;line-height:1.8;color:#1b1c1b;">
+      {{ .Content }}
+    </div>
+
+    <!-- Tags footer -->
+    {{- $tags := .GetTerms "tags" }}
+    {{- if $tags }}
+    <footer class="mt-xl pt-lg border-t" style="border-color:#c3c8c1;">
+      <div class="flex items-center gap-sm flex-wrap">
+        <span class="font-serif text-xs uppercase tracking-widest" style="color:#434843;letter-spacing:0.05em;">Filed under:</span>
+        {{- range $tags }}
+        <a href="{{ .Permalink }}" class="px-sm py-xs font-serif text-xs uppercase font-bold tracking-tighter hover:opacity-80" style="background:#d8e7d0;color:#131e11;font-size:10px;padding:2px 8px;">
+          {{ .LinkTitle }}
+        </a>
+        {{- end }}
+      </div>
+    </footer>
+    {{- end }}
+
+    <!-- Post navigation -->
+    <nav class="mt-xl pt-lg border-t flex justify-between gap-lg" style="border-color:#c3c8c1;">
+      {{- with .PrevInSection }}
+      <a href="{{ .RelPermalink }}" class="flex-1 group" style="min-width:0;">
+        <span class="font-serif text-xs uppercase tracking-widest block mb-xs" style="color:#434843;letter-spacing:0.05em;">← Previous</span>
+        <span class="font-serif group-hover:text-primary transition-colors" style="font-size:16px;font-weight:600;color:#1b1c1b;display:block;">{{ .Title }}</span>
+      </a>
+      {{- end }}
+      {{- with .NextInSection }}
+      <a href="{{ .RelPermalink }}" class="flex-1 text-right group" style="min-width:0;">
+        <span class="font-serif text-xs uppercase tracking-widest block mb-xs" style="color:#434843;letter-spacing:0.05em;">Next →</span>
+        <span class="font-serif group-hover:text-primary transition-colors" style="font-size:16px;font-weight:600;color:#1b1c1b;display:block;">{{ .Title }}</span>
+      </a>
+      {{- end }}
+    </nav>
+
+  </article>
+
+  <!-- Sidebar -->
+  <aside class="col-span-12 lg:col-span-4">
+    <div class="sticky top-12 flex flex-col gap-xl">
+
+      <!-- Article metadata -->
+      <section class="border p-xl" style="border-color:#c3c8c1;background:#f5f3f2;">
+        <h3 class="font-serif text-xs uppercase tracking-widest mb-lg flex items-center gap-2" style="color:#334537;letter-spacing:0.1em;">
+          <span class="material-symbols-outlined" style="font-size:16px;">lab_profile</span>
+          Article Data
+        </h3>
+        <div class="flex flex-col gap-md">
+          <div class="border-b pb-xs" style="border-color:#c3c8c1;">
+            <span class="font-serif italic block" style="font-size:14px;color:#434843;">Published</span>
+            <span style="font-size:16px;color:#1b1c1b;">{{ .Date.Format "January 2, 2006" }}</span>
+          </div>
+          {{- if .Lastmod.After .Date }}
+          <div class="border-b pb-xs" style="border-color:#c3c8c1;">
+            <span class="font-serif italic block" style="font-size:14px;color:#434843;">Last Updated</span>
+            <span style="font-size:16px;color:#1b1c1b;">{{ .Lastmod.Format "January 2, 2006" }}</span>
+          </div>
+          {{- end }}
+          {{- if .ReadingTime }}
+          <div class="border-b pb-xs" style="border-color:#c3c8c1;">
+            <span class="font-serif italic block" style="font-size:14px;color:#434843;">Reading Time</span>
+            <span style="font-size:16px;color:#1b1c1b;">{{ .ReadingTime }} minutes</span>
+          </div>
+          {{- end }}
+          {{- with .Params.author | default site.Params.author }}
+          <div class="border-b pb-xs" style="border-color:#c3c8c1;">
+            <span class="font-serif italic block" style="font-size:14px;color:#434843;">Author</span>
+            <span style="font-size:16px;color:#1b1c1b;">{{ . }}</span>
+          </div>
+          {{- end }}
+          {{- $tags := .GetTerms "tags" }}
+          {{- if $tags }}
+          <div>
+            <span class="font-serif italic block mb-sm" style="font-size:14px;color:#434843;">Tags</span>
+            <div class="flex flex-wrap gap-xs">
+              {{- range $tags }}
+              <a href="{{ .Permalink }}" class="px-sm py-xs font-serif text-xs uppercase font-bold hover:opacity-80" style="background:#d8e7d0;color:#131e11;font-size:10px;padding:2px 8px;">
+                {{ .LinkTitle }}
+              </a>
+              {{- end }}
+            </div>
+          </div>
+          {{- end }}
+        </div>
+      </section>
+
+      <!-- Related posts -->
+      {{- if $related }}
+      <section class="border p-xl" style="border-color:#c3c8c1;">
+        <h3 class="font-serif text-xs uppercase tracking-widest mb-lg" style="color:#334537;letter-spacing:0.1em;">Related Observations</h3>
+        <ul class="flex flex-col gap-md">
+          {{- range $related }}
+          <li class="group flex gap-md items-start">
+            <div>
+              <a href="{{ .RelPermalink }}" class="font-serif group-hover:text-primary transition-colors" style="font-size:16px;line-height:1.4;color:#1b1c1b;display:block;">{{ .Title }}</a>
+              <span class="font-serif italic" style="font-size:14px;color:#434843;">{{ .Date.Format "Jan 2, 2006" }}</span>
+            </div>
+          </li>
+          {{- end }}
+        </ul>
+      </section>
+      {{- end }}
+
+      <!-- Archive CTA -->
+      <section class="border p-xl" style="border-color:#4a5d4e;background:#d3e8d5;">
+        <p class="font-serif italic mb-md" style="font-size:14px;color:#334537;">This post is part of the public archive.</p>
+        <a href="/posts/" class="font-serif text-xs font-bold uppercase flex items-center gap-1 group hover:opacity-70 transition-opacity" style="color:#334537;letter-spacing:0.05em;">
+          VIEW ALL POSTS
+          <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" style="font-size:16px;">arrow_forward</span>
+        </a>
+      </section>
+
+    </div>
+  </aside>
+
+</div>
+
+{{- end }}
