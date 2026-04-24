@@ -24,6 +24,16 @@ enableRobotsTXT = true
   url = "/talks/"
   weight = 20
 
+[[menu.main]]
+  name = "Experiments"
+  url = "https://experiments.andrewmcdonough.com"
+  weight = 30
+
+[[menu.main]]
+  name = "Now"
+  url = "/now/"
+  weight = 40
+
 [outputs]
   home = ["HTML", "RSS"]
 
