@@ -1,4 +1,19 @@
 {{- define "main" }}
+{{- if .Params.side_image }}
+<div class="grid grid-cols-12 gap-gutter items-start py-xl">
+  <div class="col-span-12 lg:col-span-7 flex flex-col gap-md">
+    <h1 class="font-serif" style="font-size:40px;line-height:1.2;font-weight:700;letter-spacing:-0.02em;color:#1b1c1b;">
+      {{ .Title }}
+    </h1>
+    <div class="post-content" style="font-size:18px;line-height:1.8;color:#1b1c1b;">
+      {{ .Content }}
+    </div>
+  </div>
+  <div class="col-span-12 lg:col-span-5 lg:pt-xl">
+    <img src="{{ .Params.side_image }}" alt="" class="w-full h-auto" style="display:block;"/>
+  </div>
+</div>
+{{- else }}
 <div class="max-w-2xl py-xl">
   <h1 class="font-serif mb-xl" style="font-size:40px;line-height:1.2;font-weight:700;letter-spacing:-0.02em;color:#1b1c1b;">
     {{ .Title }}
@@ -7,4 +22,5 @@
     {{ .Content }}
   </div>
 </div>
+{{- end }}
 {{- end }}

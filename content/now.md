@@ -2,6 +2,7 @@
 title: "Now"
 date: 2026-04-23
 layout: "standalone"
+side_image: "/images/berlin-map.png"
 ---
 
 I've been working for the last four years as CTO of [CaptionHub](https://www.captionhub.com).
