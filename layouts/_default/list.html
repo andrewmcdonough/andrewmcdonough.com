@@ -83,19 +83,46 @@
   <p class="font-serif max-w-md italic" style="font-size:16px;line-height:1.6;color:#434843;font-style:italic;">
     A digest of new posts on engineering, leadership, and software craft — delivered when there is something worth reading.
   </p>
-  <div class="w-full max-w-sm mt-md">
+  <form id="dispatch-form" class="w-full max-w-sm mt-md">
     <div class="flex flex-col gap-xs">
       <label class="font-serif text-xs italic text-left ml-1" style="color:#737872;font-style:italic;">E-mail Address</label>
       <div class="flex border-b pb-xs" style="border-color:#334537;">
-        <input type="email" placeholder="your@email.com"
+        <input type="email" name="email" placeholder="your@email.com" required
                class="bg-transparent border-none focus:ring-0 w-full font-serif placeholder-stone-300"
                style="background:transparent;border:none;outline:none;font-family:'Noto Serif',serif;font-size:16px;"/>
-        <button class="font-serif text-xs font-bold uppercase hover:opacity-70 transition-opacity" style="color:#334537;font-size:12px;letter-spacing:0.05em;">
+        <button type="submit" id="dispatch-btn" class="font-serif text-xs font-bold uppercase hover:opacity-70 transition-opacity" style="color:#334537;font-size:12px;letter-spacing:0.05em;">
           Subscribe
         </button>
       </div>
     </div>
-  </div>
+  </form>
+  <p id="dispatch-success" class="font-serif italic mt-md" style="display:none;color:#434843;font-style:italic;font-size:15px;">Check your inbox — a confirmation email is on its way.</p>
+  <script>
+    document.getElementById('dispatch-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      var email = this.querySelector('input[type="email"]').value;
+      var btn = document.getElementById('dispatch-btn');
+      btn.textContent = '...';
+      btn.disabled = true;
+      try {
+        var res = await fetch('/.netlify/functions/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: email })
+        });
+        if (res.ok) {
+          document.getElementById('dispatch-form').style.display = 'none';
+          document.getElementById('dispatch-success').style.display = 'block';
+        } else {
+          btn.textContent = 'Subscribe';
+          btn.disabled = false;
+        }
+      } catch (err) {
+        btn.textContent = 'Subscribe';
+        btn.disabled = false;
+      }
+    });
+  </script>
 </section>
 
 {{- else }}
