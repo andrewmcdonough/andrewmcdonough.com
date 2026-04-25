@@ -1,7 +1,8 @@
 baseURL = "https://www.andrewmcdonough.com"
 title = "Andrew McDonough"
 languageCode = "en-us"
-paginate = 10
+[pagination]
+  pagerSize = 10
 enableRobotsTXT = true
 
 [services.googleAnalytics]
