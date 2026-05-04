@@ -27,7 +27,7 @@ enableRobotsTXT = true
 
 [[menu.main]]
   name = "Experiments"
-  url = "https://experiments.andrewmcdonough.com"
+  url = "/experiments/"
   weight = 30
 
 [[menu.main]]

@@ -1,0 +1,48 @@
+- name: sequencer
+  title: "Sequencer"
+  description: "A web-based step sequencer"
+  tags: [music]
+- name: face-art
+  title: "Face Art"
+  description: "Generative art driven by your face movements"
+  tags: [art, camera]
+- name: unicorn-face
+  title: "Unicorn Face"
+  description: "Rainbow unicorn that mirrors your face with magical gesture effects"
+  tags: [art, camera, kids]
+- name: bubble-draw
+  title: "Bubble Draw"
+  description: "Draw with dots — hover to cycle through rainbow colours"
+  tags: [art]
+- name: bubble-face
+  title: "Bubble Face"
+  description: "Paint the dot grid with your face"
+  tags: [art, camera]
+- name: bubble-face-mono
+  title: "Bubble Face Mono"
+  description: "Face painting with a single brush colour — press space to cycle"
+  tags: [art, camera]
+- name: body-art
+  title: "Body Art"
+  description: "Body-movement art — pose and gesture to paint with particles, arcs and sparks"
+  tags: [art, camera]
+- name: rainbow-organ
+  title: "Rainbow Organ"
+  description: "A kids' rainbow musical instrument — play chromatic notes with your keyboard, summon unicorns, hearts and stars"
+  tags: [music, kids]
+- name: golf-shooter
+  title: "Golf Shooter"
+  description: "A Fortnite-inspired golf course shooter — blast golfers with arrow keys and X, watch the robot claw carry them off"
+  tags: [game, kids]
+- name: unicorn-jump
+  title: "Unicorn Jump"
+  description: "Endless racetrack jumper — press space to leap your winged unicorn over rainbow hurdles"
+  tags: [game, kids]
+- name: unicorn-race
+  title: "Unicorn Race"
+  description: "Race 4 rival unicorns — hammer space to go faster, top 3 get the podium with streamers"
+  tags: [game, kids]
+- name: bbc-basic
+  title: "BBC Basic"
+  description: "A BBC Micro BASIC interpreter in the browser — type and run classic BASIC programs"
+  tags: [coding, retro]
