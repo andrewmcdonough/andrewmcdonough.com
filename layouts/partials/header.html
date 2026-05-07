@@ -12,8 +12,24 @@
       </a>
       {{- end }}
     </div>
-    <div class="flex items-center gap-4">
-      <span class="material-symbols-outlined text-stone-500 cursor-pointer hover:text-stone-700">search</span>
-    </div>
+    <button id="kebab-btn" class="flex md:hidden items-center text-stone-500 hover:text-stone-700 transition-colors duration-300" aria-label="Open menu">
+      <span class="material-symbols-outlined">more_vert</span>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden border-t border-stone-200 px-8 py-4 flex-col gap-4 bg-stone-50">
+    {{- range site.Menus.main }}
+    {{- $active := $.IsMenuCurrent "main" . }}
+    <a href="{{ .URL | relURL }}"
+       class="{{ if $active }}text-emerald-900 border-b border-emerald-900 pb-0.5{{ else }}text-stone-500 hover:text-emerald-800{{ end }} font-serif tracking-tight transition-colors duration-300">
+      {{ .Name }}
+    </a>
+    {{- end }}
   </div>
 </nav>
+<script>
+  document.getElementById('kebab-btn').addEventListener('click', function() {
+    var menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+    menu.classList.toggle('flex');
+  });
+</script>
