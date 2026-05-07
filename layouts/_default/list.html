@@ -76,6 +76,7 @@
   </div>
 </section>
 
+{{- if site.Params.newsletter }}
 <!-- Newsletter / Dispatch -->
 <section class="mt-xl mb-xl border p-xl flex flex-col items-center text-center gap-md bg-white" style="border-color:#e7e2d4;">
   <span class="material-symbols-outlined text-primary text-4xl" style="color:#334537;font-size:36px;">mail</span>
@@ -124,6 +125,7 @@
     });
   </script>
 </section>
+{{- end }}
 
 {{- else }}
 

@@ -14,6 +14,7 @@ enableRobotsTXT = true
   description = "Andrew McDonough's Personal Website"
   heroTitle = "Writing on Software, Technology, and Building Things."
   heroSubtitle = "Observations from a CTO based in Berlin on engineering, leadership, and making software."
+  newsletter = false
 
 [[menu.main]]
   name = "Archive"
